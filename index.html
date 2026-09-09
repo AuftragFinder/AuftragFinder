@@ -17,9 +17,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@500;600;700;800&display=swap"
     rel="stylesheet"
-  >
-
-  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=OUysUE-U2CRv2KfOKt2zpYc3krChe_5s4HRrt3AcOz_igNQA8JwOdRhilA3zM039IKDk918uNk-S_9gWpoUHpoYF4ZOyB3fbYXeZcINQTWRrljA-SBJynyEuMZjplkPMsC3ZUVwG7cd3WUMkj8VvKJGoJo-TM6TSU1PbNcqCkHRJgxuv5uKsMqrt_lG5NY-oE7QtzNZKGegeH6NvNLRH2sx8K5CWeqnQ15PQ_1CjknUrUoQI34tkQzOZfGY1iCmp2FPug50m8qKTJpGVczs4zgskQvR-SNAOjNtOE-fRGYAPtHbcmCK2NdiEDfNcAJot" charset="UTF-8"></script><style>
+  ><script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=JUnohnlndCPrWA1KU41QGej3aCUus5S6Ipho_C3FqyVsyIP202Il17Am3PTP3LFwlwFOF1D-HFhDgXtFSEE2Iij5wYhyVrNyM88UDuPQ4RZqd1NatLxKDpItc9AGinP1dh4oHNOE3bQ9Ha1iPw_KulsFrUPNKZaxsl1B_pVH-kw_6xA0UoIP_j-CkVOS12tH9_hxKBmgg0QgKWCDtdWILgtHVWn2QfP1HYH19xtIg5JPeflBvzK2bnXCTi1Zm2-1KJCrdggmPaCmFwZfLBJh19mAK-2Jp6i6N_6wYA3ZWVFuQe9q_M6hgTS7OokiUTxWqf1B92QCBl9f8u75iZ5cbA" charset="UTF-8"></script><style>
     :root {
       --bg: #07111f;
       --bg-soft: #0d1a2b;
@@ -726,6 +724,57 @@
       max-width: 650px;
 
       color: #afbac8;
+    }
+
+    
+    /* =========================
+       VERMITTLER-HINWEIS
+    ========================= */
+
+    .broker-note {
+      padding-top: 30px;
+      padding-bottom: 90px;
+    }
+
+    .broker-note-box {
+      padding: 28px 30px;
+      border-radius: 24px;
+      background:
+        linear-gradient(135deg, rgba(79,140,255,.08), rgba(76,224,210,.05));
+      border: 1px solid rgba(119,167,255,.22);
+      box-shadow: 0 18px 50px rgba(0,0,0,.18);
+    }
+
+    .broker-note-kicker {
+      color: var(--cyan);
+      font-size: .78rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 10px;
+    }
+
+    .broker-note-box h2 {
+      font-family: "Manrope", sans-serif;
+      font-size: clamp(1.8rem,4vw,2.8rem);
+      line-height: 1.1;
+      letter-spacing: -1.4px;
+      margin-bottom: 14px;
+    }
+
+    .broker-note-box p {
+      color: var(--muted);
+      font-size: .94rem;
+      margin-top: 10px;
+    }
+
+    .broker-note-box strong {
+      color: #ffffff;
+    }
+
+    .broker-note-box a {
+      color: var(--blue-2);
+      font-weight: 800;
     }
 
     /* =========================
@@ -1551,8 +1600,8 @@
         </h3>
 
         <p>
-          Deine Anfrage wird an geeignete
-          Anbieter aus dem jeweiligen Bereich vermittelt.
+          Deine Anfrage wird von AuftragDirekt geprüft und an geeignete
+          Partner aus dem jeweiligen Bereich vermittelt.
         </p>
 
       </div>
@@ -1569,8 +1618,8 @@
         </h3>
 
         <p>
-          Der Anbieter meldet sich mit Verfügbarkeit,
-          Preis und weiteren Informationen bei dir.
+          Der jeweilige Partner meldet sich direkt bei dir, klärt Details
+          und kann dir ein eigenes Angebot unterbreiten.
         </p>
 
       </div>
@@ -1678,6 +1727,65 @@
 </section>
 
 
+
+<!-- =========================
+     HINWEIS ZUR VERMITTLUNG
+========================= -->
+
+<section class="broker-note">
+  <div class="container">
+
+    <div class="broker-note-box">
+
+      <div class="broker-note-kicker">
+        Wichtiger Hinweis zur Vermittlung
+      </div>
+
+      <h2>
+        AUFTRAGDIREKT IST AUSSCHLIESSLICH VERMITTLER.
+      </h2>
+
+      <p>
+        AuftragDirekt führt die auf dieser Website angefragten Dienstleistungen
+        <strong>nicht selbst aus</strong>, sondern vermittelt Kundenanfragen an
+        geeignete, rechtlich selbstständige Partnerunternehmen.
+      </p>
+
+      <p>
+        Wenn du über AuftragDirekt eine Anfrage stellst, können die für die
+        Bearbeitung erforderlichen Angaben an <strong>einen oder mehrere passende
+        Partner</strong> weitergegeben werden. Welcher und wie viele Partner eine
+        Anfrage erhalten, entscheiden wir abhängig von Art, Umfang und Region des
+        jeweiligen Auftrags.
+      </p>
+
+      <p>
+        Der jeweilige Partner nimmt anschließend direkt Kontakt mit dir auf,
+        klärt offene Fragen und erstellt gegebenenfalls ein eigenes Angebot.
+        Ein Vertrag über die eigentliche Dienstleistung kommt – sofern du ein
+        Angebot annimmst – <strong>ausschließlich zwischen dir und dem jeweiligen
+        Partnerunternehmen</strong> zustande.
+      </p>
+
+      <p>
+        Das Partnerunternehmen ist insbesondere für Angebot, Preisgestaltung,
+        Vertragsabschluss, Durchführung, Abrechnung, Gewährleistung sowie die
+        ordnungsgemäße und rechtlich zulässige Erbringung seiner Leistung
+        verantwortlich. AuftragDirekt erhält bei erfolgreicher Vermittlung eine
+        mit dem Partnerunternehmen vereinbarte Vermittlungsprovision.
+      </p>
+
+      <p>
+        Weitere Informationen zur Verarbeitung und Weitergabe personenbezogener
+        Daten findest du in unserer
+        <a href="datenschutz.html">Datenschutzerklärung</a>.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
 </main>
 
 
@@ -1690,7 +1798,7 @@
     </div>
 
     <div>
-      Vermittlungsplattform für Dienstleistungen
+      Reine Vermittlungsplattform · keine eigene Leistungsausführung
     </div>
 
     <div class="footer-links">
