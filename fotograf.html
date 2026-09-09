@@ -3,9 +3,1098 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AuftragDirekt</title>
+
+  <title>Foto & Video anfragen | AuftragDirekt</title>
+
+  <meta
+    name="description"
+    content="Fotograf oder Videograf kostenlos und unverbindlich anfragen. Anlass, Ort, Dauer, gewünschte Leistungen, Stil, Nachbearbeitung und Budget angeben und passende Anbieter vermittelt bekommen."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=kg9TkD5FVVv-kpJEeFU8TTDhTIk_6NMRZwSmMYRViPdwolx_DARbiKqk_eXHfgYS2gH8W8lcsp2KUa9RqlKKruiXR--w0jmvjFkOfiCOm29d4kZx808YWPCzB1IOlcTwE3-cxsYGwLnTlDZzH7p-VFiYekNrxH7AremlC2OyShj1ow15cbeO3Xk_3xB_pyf6fEVl888ijRJFlWCSkNLECVGMwPhXYDDQ6KrT6zrQoThmum0ACcX8k2QSWthgUsQ3MM1NU7La-3E_Br8rLMJLMHNiVmLZ8pWgB-Mq3d6XPaiVVbpnkPCQSsSQmiYiX5Vi" charset="UTF-8"></script><style>
+    :root {
+      --bg: #07111f;
+      --bg2: #0c1929;
+      --card: rgba(255,255,255,.06);
+      --card2: rgba(255,255,255,.095);
+      --line: rgba(255,255,255,.11);
+
+      --text: #f5f8fc;
+      --muted: #9eacbd;
+
+      --blue: #4f8cff;
+      --blue-light: #78a8ff;
+      --cyan: #4ce0d2;
+      --green: #61d795;
+
+      --radius: 22px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: "Inter", sans-serif;
+      background:
+        radial-gradient(circle at 10% 15%, rgba(79,140,255,.16), transparent 28%),
+        radial-gradient(circle at 90% 20%, rgba(76,224,210,.08), transparent 24%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(7,17,31,.84);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      width: min(1160px, 92%);
+      min-height: 78px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-family: "Manrope", sans-serif;
+      font-size: 1.4rem;
+      font-weight: 800;
+    }
+
+    .logo-box {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 13px;
+      background: linear-gradient(135deg, var(--blue), var(--cyan));
+      box-shadow: 0 10px 30px rgba(79,140,255,.25);
+      color: white;
+    }
+
+    .logo span {
+      color: var(--cyan);
+    }
+
+    .back-home {
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      font-size: .85rem;
+      font-weight: 700;
+      transition: .2s;
+    }
+
+    .back-home:hover {
+      background: rgba(255,255,255,.08);
+    }
+
+    .hero {
+      width: min(1160px, 92%);
+      margin: auto;
+      padding: 75px 0 45px;
+      display: grid;
+      grid-template-columns: 1fr .75fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      padding: 8px 13px;
+      margin-bottom: 18px;
+      border-radius: 999px;
+      background: rgba(76,224,210,.09);
+      border: 1px solid rgba(76,224,210,.18);
+      color: var(--cyan);
+      font-size: .76rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .hero h1 {
+      font-family: "Manrope", sans-serif;
+      font-size: clamp(3rem,6vw,5.5rem);
+      line-height: .98;
+      letter-spacing: -2.5px;
+    }
+
+    .hero h1 span {
+      background: linear-gradient(135deg, var(--blue-light), var(--cyan));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      margin-top: 20px;
+      max-width: 680px;
+      color: var(--muted);
+      font-size: 1.04rem;
+    }
+
+    .hero-points {
+      display: grid;
+      gap: 13px;
+    }
+
+    .point {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 15px 17px;
+      border-radius: 16px;
+      background: rgba(255,255,255,.045);
+      border: 1px solid var(--line);
+      color: #dce5ef;
+      font-size: .88rem;
+      font-weight: 700;
+    }
+
+    .point span {
+      width: 30px;
+      height: 30px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: rgba(97,215,149,.12);
+      color: var(--green);
+    }
+
+    .form-section {
+      width: min(900px, 92%);
+      margin: 25px auto 100px;
+    }
+
+    .form-shell {
+      padding: 28px;
+      border-radius: 30px;
+      background: linear-gradient(145deg, rgba(255,255,255,.09), rgba(255,255,255,.035));
+      border: 1px solid var(--line);
+      box-shadow: 0 30px 80px rgba(0,0,0,.30);
+    }
+
+    .progress-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 12px;
+    }
+
+    .progress-title {
+      font-size: .8rem;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .progress-count {
+      color: var(--cyan);
+      font-size: .82rem;
+      font-weight: 800;
+    }
+
+    .progress {
+      height: 8px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: rgba(255,255,255,.07);
+      margin-bottom: 35px;
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 11.11%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--blue), var(--cyan));
+      transition: width .35s ease;
+    }
+
+    .step {
+      display: none;
+      animation: fade .25s ease;
+    }
+
+    .step.active {
+      display: block;
+    }
+
+    @keyframes fade {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .step-eyebrow {
+      color: var(--blue-light);
+      font-size: .75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    .step h2 {
+      font-family: "Manrope", sans-serif;
+      font-size: clamp(1.8rem,4vw,2.8rem);
+      line-height: 1.05;
+    }
+
+    .step-description {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: .92rem;
+    }
+
+    .options {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 13px;
+      margin-top: 30px;
+    }
+
+    .options.three {
+      grid-template-columns: repeat(3,1fr);
+    }
+
+    .option input {
+      display: none;
+    }
+
+    .option label {
+      min-height: 78px;
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.045);
+      cursor: pointer;
+      transition: .2s;
+    }
+
+    .option label:hover {
+      background: rgba(255,255,255,.08);
+      border-color: rgba(79,140,255,.35);
+    }
+
+    .option input:checked + label {
+      background: linear-gradient(135deg, rgba(79,140,255,.18), rgba(76,224,210,.08));
+      border-color: var(--blue-light);
+      box-shadow: 0 0 0 2px rgba(79,140,255,.08);
+    }
+
+    .option-icon {
+      font-size: 1.5rem;
+    }
+
+    .option-text strong {
+      display: block;
+      font-size: .91rem;
+    }
+
+    .option-text small {
+      display: block;
+      margin-top: 2px;
+      color: var(--muted);
+      font-size: .73rem;
+    }
+
+    .input-grid {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .input-group.full {
+      grid-column: 1 / -1;
+    }
+
+    label.field-label {
+      color: #cbd5e1;
+      font-size: .78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .4px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 15px 16px;
+      border-radius: 13px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.055);
+      color: white;
+      font-family: inherit;
+      font-size: .95rem;
+      outline: none;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--blue-light);
+    }
+
+    select option {
+      background: #0e1a29;
+    }
+
+    textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #657386;
+    }
+
+    .checks {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .check-item input {
+      display: none;
+    }
+
+    .check-item label {
+      min-height: 62px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px;
+      border-radius: 14px;
+      background: rgba(255,255,255,.045);
+      border: 1px solid var(--line);
+      cursor: pointer;
+      font-size: .86rem;
+      transition: .2s;
+    }
+
+    .check-item input:checked + label {
+      border-color: var(--cyan);
+      background: rgba(76,224,210,.10);
+    }
+
+    .form-actions {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 35px;
+    }
+
+    .btn {
+      border: none;
+      padding: 14px 22px;
+      border-radius: 13px;
+      font-family: inherit;
+      font-weight: 800;
+      cursor: pointer;
+      transition: .2s;
+    }
+
+    .btn-back {
+      color: white;
+      background: rgba(255,255,255,.06);
+      border: 1px solid var(--line);
+    }
+
+    .btn-back:hover {
+      background: rgba(255,255,255,.10);
+    }
+
+    .btn-next {
+      margin-left: auto;
+      color: white;
+      background: linear-gradient(135deg, var(--blue), var(--cyan));
+      box-shadow: 0 12px 30px rgba(79,140,255,.20);
+    }
+
+    .btn-next:hover {
+      transform: translateY(-2px);
+    }
+
+    .privacy-note {
+      margin-top: 18px;
+      color: #728094;
+      text-align: center;
+      font-size: .73rem;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 35px 0;
+      color: #778598;
+      font-size: .78rem;
+    }
+
+    .footer-inner {
+      width: min(1160px, 92%);
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 18px;
+    }
+
+    @media(max-width:850px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-points {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .options.three {
+        grid-template-columns: repeat(2,1fr);
+      }
+    }
+
+    @media(max-width:650px) {
+      .hero {
+        padding-top: 50px;
+      }
+
+      .hero-points,
+      .options,
+      .options.three,
+      .checks,
+      .input-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-shell {
+        padding: 20px;
+      }
+
+      .back-home {
+        font-size: .75rem;
+      }
+
+      .logo {
+        font-size: 1.15rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <!-- Inhalt folgt -->
+
+<header>
+  <div class="nav">
+    <a href="index.html" class="logo">
+      <div class="logo-box">A</div>
+      Auftrag<span>Direkt</span>
+    </a>
+
+    <a href="index.html" class="back-home">
+      ← Zur Startseite
+    </a>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div>
+    <div class="hero-badge">
+      Foto & Video
+    </div>
+
+    <h1>
+      FOTO & VIDEO PLANEN.
+      <span>MOMENTE FESTHALTEN.</span>
+    </h1>
+
+    <p>
+      Beschreibe deinen Foto- oder Videoauftrag in wenigen Schritten.
+      Wir vermitteln deine Anfrage an passende Fotografen und Videografen,
+      die sich anschließend mit einem Angebot bei dir melden können.
+    </p>
+  </div>
+
+  <div class="hero-points">
+    <div class="point"><span>✓</span>Kostenlos anfragen</div>
+    <div class="point"><span>✓</span>Unverbindlich</div>
+    <div class="point"><span>✓</span>Für Gruppen & Firmen</div>
+    <div class="point"><span>✓</span>Für Privat & Gewerbe</div>
+  </div>
+</section>
+
+<section class="form-section">
+
+  <form
+    id="fotografForm"
+    class="form-shell"
+    action="https://formspree.io/f/mwlkargl"
+    method="POST"
+  >
+
+    <div class="progress-top">
+      <div class="progress-title">Deine Foto- & Video-Anfrage</div>
+      <div class="progress-count" id="progressCount">Schritt 1 von 9</div>
+    </div>
+
+    <div class="progress">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- SCHRITT 1 -->
+    <div class="step active">
+      <div class="step-eyebrow">Schritt 1</div>
+      <h2>Für welchen Anlass brauchst du Foto oder Video?</h2>
+      <p class="step-description">Wähle den Anlass, der am besten passt.</p>
+
+      <div class="options">
+        <div class="option">
+          <input type="radio" id="hochzeit" name="anlass" value="Hochzeit">
+          <label for="hochzeit">
+            <span class="option-icon">💍</span>
+            <span class="option-text">
+              <strong>Hochzeit</strong>
+              <small>Trauung, Feier oder kompletter Tag</small>
+            </span>
+          </label>
+        </div>
+
+        <div class="option">
+          <input type="radio" id="geburtstag" name="anlass" value="Geburtstag">
+          <label for="geburtstag">
+            <span class="option-icon">🎂</span>
+            <span class="option-text">
+              <strong>Geburtstag</strong>
+              <small>Private Feier oder Jubiläum</small>
+            </span>
+          </label>
+        </div>
+
+        <div class="option">
+          <input type="radio" id="firma" name="anlass" value="Firmenveranstaltung">
+          <label for="firma">
+            <span class="option-icon">🏢</span>
+            <span class="option-text">
+              <strong>Firmenveranstaltung</strong>
+              <small>Event, Messe, Tagung oder Teamfeier</small>
+            </span>
+          </label>
+        </div>
+
+        <div class="option">
+          <input type="radio" id="event" name="anlass" value="Event / Konzert">
+          <label for="event">
+            <span class="option-icon">🎤</span>
+            <span class="option-text">
+              <strong>Event / Konzert</strong>
+              <small>Bühne, Festival oder öffentliche Veranstaltung</small>
+            </span>
+          </label>
+        </div>
+
+        <div class="option">
+          <input type="radio" id="portrait" name="anlass" value="Portrait / Shooting">
+          <label for="portrait">
+            <span class="option-icon">📷</span>
+            <span class="option-text">
+              <strong>Portrait / Shooting</strong>
+              <small>Einzelperson, Paar, Familie oder Team</small>
+            </span>
+          </label>
+        </div>
+
+        <div class="option">
+          <input type="radio" id="sonstiges" name="anlass" value="Sonstiges">
+          <label for="sonstiges">
+            <span class="option-icon">🎬</span>
+            <span class="option-text">
+              <strong>Sonstiges</strong>
+              <small>Individueller Auftrag</small>
+            </span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="button" class="btn btn-next" onclick="nextStep()">Weiter →</button>
+      </div>
+    </div>
+
+    <!-- SCHRITT 2 -->
+    <div class="step">
+      <div class="step-eyebrow">Schritt 2</div>
+      <h2>Wo und wann findet der Auftrag statt?</h2>
+
+      <div class="input-grid">
+        <div class="input-group full">
+          <label class="field-label">Ort / Location *</label>
+          <input type="text" name="veranstaltungsort" placeholder="Straße, Hausnummer, PLZ, Ort" required>
+        </div>
+
+        <div class="input-group">
+          <label class="field-label">Datum *</label>
+          <input type="date" name="datum" required>
+        </div>
+
+        <div class="input-group">
+          <label class="field-label">Beginn *</label>
+          <input type="time" name="beginn" required>
+        </div>
+
+        <div class="input-group">
+          <label class="field-label">Voraussichtliches Ende</label>
+          <input type="time" name="ende">
+        </div>
+
+        <div class="input-group">
+          <label class="field-label">Indoor / Outdoor</label>
+          <select name="location_art">
+            <option>Indoor</option>
+            <option>Outdoor</option>
+            <option>Beides</option>
+            <option>Noch offen</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="button" class="btn btn-back" onclick="prevStep()">← Zurück</button>
+        <button type="button" class="btn btn-next" onclick="nextStep()">Weiter →</button>
+      </div>
+    </div>
+
+    <!-- SCHRITT 3 -->
+    <div class="step">
+      <div class="step-eyebrow">Schritt 3</div>
+      <h2>Wie groß ist der Auftrag ungefähr?</h2>
+
+      <div class="input-grid">
+        <div class="input-group">
+          <label class="field-label">Gäste / Personen</label>
+          <input type="number" min="1" name="personen" placeholder="z. B. 80">
+        </div>
+
+        <div class="input-group">
+          <label class="field-label">Gewünschte Begleitdauer</label>
+          <select name="dauer">
+            <option value="">Bitte auswählen</option>
+            <option>Bis 1 Stunde</option>
+            <option>1–3 Stunden</option>
+            <option>3–6 Stunden</option>
+            <option>6–10 Stunden</option>
+            <option>Ganzer Tag</option>
+            <option>Mehrere Tage</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="button" class="btn btn-back" onclick="prevStep()">← Zurück</button>
+        <button type="button" class="btn btn-next" onclick="nextStep()">Weiter →</button>
+      </div>
+    </div>
+
+    <!-- SCHRITT 4 -->
+    <div class="step">
+      <div class="step-eyebrow">Schritt 4</div>
+      <h2>Welche Leistung wird benötigt?</h2>
+
+      <div class="options">
+        <div class="option">
+          <input type="radio" id="foto" name="leistung" value="Nur Fotografie">
+          <label for="foto">
+            <span class="option-icon">📸</span>
+            <span class="option-text">
+              <strong>Nur Fotografie</strong>
+              <small>Professionelle Fotos des Events oder Shootings</small>
+            </span>
+          </label>
+        </div>
+
+        <div class="option">
+          <input type="radio" id="video" name="leistung" value="Nur Video">
+          <label for="video">
+            <span class="option-icon">🎥</span>
+            <span class="option-text">
+              <strong>Nur Video</strong>
+              <small>Videobegleitung und Aufnahmen</small>
+            </span>
+          </label>
+        </div>
+
+        <div class="option">
+          <input type="radio" id="beides" name="leistung" value="Foto und Video">
+          <label for="beides">
+            <span class="option-icon">🎬</span>
+            <span class="option-text">
+              <strong>Foto & Video</strong>
+              <small>Komplette Begleitung</small>
+            </span>
+          </label>
+        </div>
+
+        <div class="option">
+          <input type="radio" id="beratung" name="leistung" value="Beratung gewünscht">
+          <label for="beratung">
+            <span class="option-icon">💡</span>
+            <span class="option-text">
+              <strong>Noch offen</strong>
+              <small>Anbieter soll beraten</small>
+            </span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="button" class="btn btn-back" onclick="prevStep()">← Zurück</button>
+        <button type="button" class="btn btn-next" onclick="nextStep()">Weiter →</button>
+      </div>
+    </div>
+
+    <!-- SCHRITT 5 -->
+    <div class="step">
+      <div class="step-eyebrow">Schritt 5</div>
+      <h2>Welcher Stil gefällt dir?</h2>
+      <p class="step-description">Mehrfachauswahl möglich.</p>
+
+      <div class="checks">
+        <div class="check-item">
+          <input type="checkbox" id="natuerlich" name="stil" value="Natürlich / authentisch">
+          <label for="natuerlich">🌿 Natürlich / authentisch</label>
+        </div>
+
+        <div class="check-item">
+          <input type="checkbox" id="modern" name="stil" value="Modern / clean">
+          <label for="modern">✨ Modern / clean</label>
+        </div>
+
+        <div class="check-item">
+          <input type="checkbox" id="cinematic" name="stil" value="Cinematic / emotional">
+          <label for="cinematic">🎞️ Cinematic / emotional</label>
+        </div>
+
+        <div class="check-item">
+          <input type="checkbox" id="reportage" name="stil" value="Reportage / dokumentarisch">
+          <label for="reportage">📰 Reportage / dokumentarisch</label>
+        </div>
+
+        <div class="check-item">
+          <input type="checkbox" id="luxus" name="stil" value="Elegant / hochwertig">
+          <label for="luxus">💎 Elegant / hochwertig</label>
+        </div>
+
+        <div class="check-item">
+          <input type="checkbox" id="offenstil" name="stil" value="Anbieter soll beraten">
+          <label for="offenstil">💡 Anbieter soll beraten</label>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="button" class="btn btn-back" onclick="prevStep()">← Zurück</button>
+        <button type="button" class="btn btn-next" onclick="nextStep()">Weiter →</button>
+      </div>
+    </div>
+
+    <!-- SCHRITT 6 -->
+    <div class="step">
+      <div class="step-eyebrow">Schritt 6</div>
+      <h2>Welche Zusatzleistungen wünschst du?</h2>
+      <p class="step-description">Mehrfachauswahl möglich.</p>
+
+      <div class="checks">
+        <div class="check-item">
+          <input type="checkbox" id="retusche" name="zusatzleistungen" value="Bildbearbeitung / Retusche">
+          <label for="retusche">🖌️ Bildbearbeitung / Retusche</label>
+        </div>
+
+        <div class="check-item">
+          <input type="checkbox" id="highlightfilm" name="zusatzleistungen" value="Highlight-Video">
+          <label for="highlightfilm">🎬 Highlight-Video</label>
+        </div>
+
+        <div class="check-item">
+          <input type="checkbox" id="langfilm" name="zusatzleistungen" value="Längeres Eventvideo">
+          <label for="langfilm">📹 Längeres Eventvideo</label>
+        </div>
+
+        <div class="check-item">
+          <input type="checkbox" id="social" name="zusatzleistungen" value="Social-Media-Clips">
+          <label for="social">📱 Social-Media-Clips</label>
+        </div>
+
+        <div class="check-item">
+          <input type="checkbox" id="album" name="zusatzleistungen" value="Fotobuch / Album">
+          <label for="album">📖 Fotobuch / Album</label>
+        </div>
+
+        <div class="check-item">
+          <input type="checkbox" id="express" name="zusatzleistungen" value="Express-Bearbeitung">
+          <label for="express">⚡ Express-Bearbeitung</label>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="button" class="btn btn-back" onclick="prevStep()">← Zurück</button>
+        <button type="button" class="btn btn-next" onclick="nextStep()">Weiter →</button>
+      </div>
+    </div>
+
+    <!-- SCHRITT 7 -->
+    <div class="step">
+      <div class="step-eyebrow">Schritt 7</div>
+      <h2>Sind Drohnenaufnahmen gewünscht?</h2>
+
+      <div class="options">
+        <div class="option">
+          <input type="radio" id="drohneja" name="drohne" value="Ja, Drohnenaufnahmen gewünscht">
+          <label for="drohneja">
+            <span class="option-icon">🚁</span>
+            <span class="option-text">
+              <strong>Ja</strong>
+              <small>Wenn Ort, Wetter und rechtliche Bedingungen es zulassen</small>
+            </span>
+          </label>
+        </div>
+
+        <div class="option">
+          <input type="radio" id="drohnenein" name="drohne" value="Nein">
+          <label for="drohnenein">
+            <span class="option-icon">📷</span>
+            <span class="option-text">
+              <strong>Nein</strong>
+              <small>Keine Luftaufnahmen nötig</small>
+            </span>
+          </label>
+        </div>
+
+        <div class="option">
+          <input type="radio" id="drohneoffen" name="drohne" value="Noch offen">
+          <label for="drohneoffen">
+            <span class="option-icon">💡</span>
+            <span class="option-text">
+              <strong>Noch offen</strong>
+              <small>Anbieter soll beraten</small>
+            </span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="button" class="btn btn-back" onclick="prevStep()">← Zurück</button>
+        <button type="button" class="btn btn-next" onclick="nextStep()">Weiter →</button>
+      </div>
+    </div>
+
+    <!-- SCHRITT 8 -->
+    <div class="step">
+      <div class="step-eyebrow">Schritt 8</div>
+      <h2>Welches Budget und welche besonderen Wünsche gibt es?</h2>
+
+      <div class="input-grid">
+        <div class="input-group">
+          <label class="field-label">Budget</label>
+          <select name="budget">
+            <option value="">Noch offen</option>
+            <option>Bis 300 €</option>
+            <option>300–600 €</option>
+            <option>600–1.000 €</option>
+            <option>1.000–2.000 €</option>
+            <option>2.000–4.000 €</option>
+            <option>Über 4.000 €</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label class="field-label">Gewünschte Lieferung</label>
+          <select name="lieferung">
+            <option>Online-Galerie / Download</option>
+            <option>USB / Datenträger</option>
+            <option>Fotobuch / Print</option>
+            <option>Noch offen</option>
+          </select>
+        </div>
+
+        <div class="input-group full">
+          <label class="field-label">Besondere Wünsche</label>
+          <textarea
+            name="besondere_wuensche"
+            placeholder="z. B. bestimmte Motive, Gruppenfotos, Interview-Aufnahmen, Highlightfilm, Social-Media-Format, Wunschstil ..."
+          ></textarea>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="button" class="btn btn-back" onclick="prevStep()">← Zurück</button>
+        <button type="button" class="btn btn-next" onclick="nextStep()">Weiter →</button>
+      </div>
+    </div>
+
+    <!-- SCHRITT 9 -->
+    <div class="step">
+      <div class="step-eyebrow">Letzter Schritt</div>
+      <h2>Wie dürfen wir dich zur Foto- & Video-Anfrage erreichen?</h2>
+      <p class="step-description">
+        Ein passender Fotograf oder Videograf kann dich anschließend bezüglich Preis und Verfügbarkeit kontaktieren.
+      </p>
+
+      <div class="input-grid">
+        <div class="input-group">
+          <label class="field-label">Vorname *</label>
+          <input type="text" name="vorname" placeholder="Max" required>
+        </div>
+
+        <div class="input-group">
+          <label class="field-label">Nachname *</label>
+          <input type="text" name="nachname" placeholder="Mustermann" required>
+        </div>
+
+        <div class="input-group">
+          <label class="field-label">E-Mail *</label>
+          <input type="email" name="email" placeholder="max@email.de" required>
+        </div>
+
+        <div class="input-group">
+          <label class="field-label">Telefon *</label>
+          <input type="tel" name="telefon" placeholder="+49 ..." required>
+        </div>
+
+        <div class="input-group">
+          <label class="field-label">Firma / Organisation</label>
+          <input type="text" name="firma_verein" placeholder="Optional">
+        </div>
+
+        <div class="input-group">
+          <label class="field-label">PLZ / Ort *</label>
+          <input type="text" name="plz_ort" placeholder="13585 Berlin" required>
+        </div>
+
+        <div class="input-group full">
+          <label class="field-label">Abschließende Nachricht</label>
+          <textarea
+            name="nachricht"
+            placeholder="Gibt es noch etwas, das der Anbieter wissen sollte?"
+          ></textarea>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="button" class="btn btn-back" onclick="prevStep()">← Zurück</button>
+        <button type="submit" class="btn btn-next">Kostenlose Anfrage absenden →</button>
+      </div>
+
+      <div class="privacy-note">
+        Mit dem Absenden erklärst du dich damit einverstanden,
+        dass deine Angaben zur Bearbeitung und Vermittlung deiner Anfrage
+        verwendet werden. Weitere Informationen findest du in der Datenschutzerklärung.
+      </div>
+    </div>
+
+  </form>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>© 2026 AuftragDirekt</div>
+
+    <div class="footer-links">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="index.html">Startseite</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  let currentStep = 0;
+
+  const steps = document.querySelectorAll(".step");
+  const progressBar = document.getElementById("progressBar");
+  const progressCount = document.getElementById("progressCount");
+
+  function updateStep() {
+    steps.forEach((step,index) => {
+      step.classList.toggle("active", index === currentStep);
+    });
+
+    const progress = ((currentStep + 1) / steps.length) * 100;
+    progressBar.style.width = progress + "%";
+
+    progressCount.textContent =
+      "Schritt " + (currentStep + 1) + " von " + steps.length;
+
+    window.scrollTo({
+      top: document.querySelector(".form-section").offsetTop - 100,
+      behavior: "smooth"
+    });
+  }
+
+  function nextStep() {
+    if(currentStep < steps.length - 1) {
+      currentStep++;
+      updateStep();
+    }
+  }
+
+  function prevStep() {
+    if(currentStep > 0) {
+      currentStep--;
+      updateStep();
+    }
+  }
+
+  updateStep();
+</script>
+
 </body>
 </html>
