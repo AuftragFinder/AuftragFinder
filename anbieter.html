@@ -3,9 +3,1156 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AuftragDirekt</title>
+
+  <title>Partner werden | AuftragDirekt</title>
+
+  <meta
+    name="description"
+    content="Partner von AuftragDirekt werden. Erhalte passende Kundenanfragen aus Berlin und Brandenburg – ohne monatliche Grundgebühr und mit 8 % Vermittlungsprovision nur bei erfolgreichem Auftrag."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=T8MGBnvJgUBZbT1yeBTWu3qGr6L0TPtEr_b7Uy2ccqxiCuvVnkmoJbRf7r_BpTnx1EUlJ6RhEq8jaYx9uiB9hIRThLLMnx2MAsCCsvhiPUmACYUTC1VJGNLuqw8YoWtYRRToLLOiLnUkI-pn-tqM2uI3inFRu0Zrb1peQu-ejXJ3stS9i61z81psRkL5yTTlH5cTj1eTJwZ9USELbTvV56wnB1_FuZay7frp6pkvWOF_lqxzZbIqEYwu3FWlQU2RIXmSULjwoE-lUSW8zxqCrkX2r11e71R5DQ17mQMjRB4UjoKmgGJODyJNijW5KkRU" charset="UTF-8"></script><style>
+    :root {
+      --bg: #07111f;
+      --bg-soft: #0d1a2b;
+      --card: rgba(255,255,255,.06);
+      --card-strong: rgba(255,255,255,.09);
+      --line: rgba(255,255,255,.10);
+
+      --text: #f7f9fc;
+      --muted: #aab6c5;
+
+      --blue: #4f8cff;
+      --blue-2: #77a7ff;
+      --cyan: #4ce0d2;
+      --green: #72e6a5;
+
+      --shadow: 0 24px 70px rgba(0,0,0,.35);
+      --radius: 24px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background:
+        radial-gradient(circle at 15% 15%, rgba(79,140,255,.14), transparent 28%),
+        radial-gradient(circle at 85% 20%, rgba(76,224,210,.08), transparent 24%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1180px, 92%);
+      margin: auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background: rgba(7,17,31,.82);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: "Manrope", sans-serif;
+      font-size: 1.45rem;
+      font-weight: 800;
+    }
+
+    .logo-box {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 13px;
+      background: linear-gradient(135deg,var(--blue),var(--cyan));
+      box-shadow: 0 10px 30px rgba(79,140,255,.28);
+      font-weight: 900;
+    }
+
+    .logo span {
+      color: var(--cyan);
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-size: .88rem;
+      font-weight: 700;
+    }
+
+    .nav-links a {
+      color: #dbe5ef;
+    }
+
+    .nav-links a:hover {
+      color: #fff;
+    }
+
+    .nav-button {
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: linear-gradient(135deg,var(--blue),var(--cyan));
+      color: #fff !important;
+      box-shadow: 0 12px 30px rgba(79,140,255,.22);
+    }
+
+    .menu-toggle {
+      display: none;
+      border: 0;
+      background: transparent;
+      color: white;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+    .hero {
+      padding: 110px 0 85px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      padding: 9px 14px;
+      border-radius: 999px;
+      background: rgba(76,224,210,.10);
+      border: 1px solid rgba(76,224,210,.22);
+      color: var(--cyan);
+      font-size: .76rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+
+    h1, h2 {
+      font-family: "Manrope", sans-serif;
+      letter-spacing: -2px;
+    }
+
+    h1 {
+      font-size: clamp(3.4rem,7vw,6.5rem);
+      line-height: .98;
+    }
+
+    h1 span,
+    .gradient-text {
+      background: linear-gradient(135deg,var(--blue-2),var(--cyan));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 22px;
+      border-radius: 14px;
+      font-weight: 800;
+      transition: .2s ease;
+      border: 0;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg,var(--blue),var(--cyan));
+      color: #fff;
+      box-shadow: 0 15px 36px rgba(79,140,255,.22);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.05);
+      color: #fff;
+    }
+
+    .hero-card {
+      padding: 28px;
+      border-radius: 28px;
+      background: linear-gradient(145deg, rgba(255,255,255,.10), rgba(255,255,255,.03));
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 16px;
+    }
+
+    .benefit {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 13px 0;
+      border-bottom: 1px solid rgba(255,255,255,.07);
+    }
+
+    .benefit:last-child {
+      border-bottom: 0;
+    }
+
+    .benefit-icon {
+      width: 32px;
+      height: 32px;
+      flex: 0 0 32px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: rgba(114,230,165,.12);
+      color: var(--green);
+      font-weight: 900;
+    }
+
+    .benefit strong {
+      display: block;
+      margin-bottom: 2px;
+      font-size: .92rem;
+    }
+
+    .benefit span {
+      color: var(--muted);
+      font-size: .82rem;
+    }
+
+    section {
+      padding: 95px 0;
+    }
+
+    .section-head {
+      max-width: 760px;
+      margin-bottom: 42px;
+    }
+
+    .eyebrow {
+      color: var(--cyan);
+      font-size: .77rem;
+      text-transform: uppercase;
+      font-weight: 900;
+      letter-spacing: 1.2px;
+    }
+
+    .section-head h2 {
+      margin-top: 9px;
+      font-size: clamp(2.4rem,5vw,4.2rem);
+      line-height: 1;
+    }
+
+    .section-head p {
+      margin-top: 14px;
+      color: var(--muted);
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 18px;
+    }
+
+    .step {
+      padding: 28px;
+      border-radius: var(--radius);
+      background: var(--card);
+      border: 1px solid var(--line);
+    }
+
+    .step-number {
+      font-family: "Manrope",sans-serif;
+      color: var(--blue-2);
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    .step h3 {
+      margin-bottom: 7px;
+    }
+
+    .step p {
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .conditions {
+      background: linear-gradient(180deg, rgba(255,255,255,.015), rgba(255,255,255,.03), rgba(255,255,255,.015));
+    }
+
+    .condition-grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 15px;
+    }
+
+    .condition {
+      padding: 25px;
+      border-radius: 20px;
+      background: rgba(255,255,255,.05);
+      border: 1px solid var(--line);
+      text-align: center;
+    }
+
+    .condition strong {
+      display: block;
+      font-size: 1.7rem;
+      color: var(--cyan);
+      margin-bottom: 7px;
+    }
+
+    .condition span {
+      color: var(--muted);
+      font-size: .82rem;
+    }
+
+    .example {
+      margin-top: 26px;
+      padding: 22px 24px;
+      border-radius: 18px;
+      background: rgba(79,140,255,.08);
+      border: 1px solid rgba(79,140,255,.22);
+    }
+
+    .example strong {
+      color: var(--blue-2);
+    }
+
+    .region-box {
+      padding: 34px;
+      border-radius: 28px;
+      background: linear-gradient(135deg, rgba(79,140,255,.08), rgba(76,224,210,.045));
+      border: 1px solid var(--line);
+    }
+
+    .region-options {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 14px;
+      margin: 28px 0;
+    }
+
+    .region-option {
+      padding: 18px;
+      border-radius: 16px;
+      background: rgba(255,255,255,.05);
+      border: 1px solid var(--line);
+      text-align: center;
+      font-weight: 800;
+    }
+
+    .route-examples {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .route {
+      padding: 14px 16px;
+      border-radius: 14px;
+      background: rgba(255,255,255,.04);
+      border: 1px solid var(--line);
+      font-size: .88rem;
+    }
+
+    .route.ok {
+      border-color: rgba(114,230,165,.22);
+    }
+
+    .route.no {
+      border-color: rgba(255,120,120,.18);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 14px;
+    }
+
+    .service {
+      padding: 18px;
+      border-radius: 16px;
+      background: rgba(255,255,255,.045);
+      border: 1px solid var(--line);
+      font-weight: 750;
+    }
+
+    .control-box {
+      padding: 34px;
+      border-radius: 28px;
+      background: rgba(255,255,255,.045);
+      border: 1px solid var(--line);
+    }
+
+    .control-box p {
+      color: var(--muted);
+      margin-top: 12px;
+    }
+
+    .control-list {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 12px;
+      margin-top: 26px;
+    }
+
+    .control-item {
+      padding: 15px 17px;
+      border-radius: 14px;
+      background: rgba(255,255,255,.05);
+      border: 1px solid var(--line);
+      font-weight: 700;
+    }
+
+    .form-wrap {
+      padding: 34px;
+      border-radius: 30px;
+      background: linear-gradient(145deg, rgba(255,255,255,.09), rgba(255,255,255,.035));
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 15px;
+      margin-top: 26px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    .field-label {
+      font-size: .77rem;
+      color: #cbd5e1;
+      text-transform: uppercase;
+      font-weight: 800;
+      letter-spacing: .4px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 14px 15px;
+      border-radius: 13px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.055);
+      color: #fff;
+      font-family: inherit;
+      font-size: .94rem;
+      outline: none;
+    }
+
+    select option {
+      background: #0f1b2a;
+    }
+
+    textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #647386;
+    }
+
+    .service-select-grid {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .check {
+      position: relative;
+    }
+
+    .check input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .check label {
+      display: flex;
+      align-items: center;
+      min-height: 54px;
+      padding: 13px 14px;
+      border-radius: 13px;
+      background: rgba(255,255,255,.045);
+      border: 1px solid var(--line);
+      cursor: pointer;
+      transition: .2s;
+      font-size: .86rem;
+      font-weight: 700;
+    }
+
+    .check input:checked + label {
+      border-color: var(--cyan);
+      background: rgba(76,224,210,.10);
+    }
+
+    .consent {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      margin-top: 22px;
+      color: #aeb8c7;
+      font-size: .82rem;
+    }
+
+    .consent input {
+      width: auto;
+      margin-top: 4px;
+    }
+
+    .note {
+      margin-top: 18px;
+      padding: 15px 17px;
+      border-radius: 14px;
+      background: rgba(255,255,255,.04);
+      border: 1px solid var(--line);
+      color: #8290a3;
+      font-size: .78rem;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 40px 0;
+      color: #7f8b9b;
+      font-size: .8rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    @media(max-width:950px) {
+      .hero-grid,
+      .steps,
+      .condition-grid,
+      .services-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media(max-width:720px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 78px;
+        padding: 24px;
+        background: rgba(7,17,31,.98);
+        flex-direction: column;
+        align-items: stretch;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .steps,
+      .condition-grid,
+      .services-grid,
+      .region-options,
+      .route-examples,
+      .control-list,
+      .form-grid,
+      .service-select-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 75px 0;
+      }
+
+      .hero {
+        padding-top: 75px;
+      }
+
+      h1 {
+        font-size: clamp(3rem,15vw,5rem);
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <!-- Inhalt folgt -->
+
+<header>
+  <div class="container nav">
+    <a href="index.html" class="logo">
+      <div class="logo-box">A</div>
+      Auftrag<span>Direkt</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle">☰</button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Start</a></li>
+      <li><a href="#ablauf">So funktioniert's</a></li>
+      <li><a href="#bereiche">Bereiche</a></li>
+      <li><a href="#konditionen">Konditionen</a></li>
+      <li><a href="#partner-werden" class="nav-button">Partner werden</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="container hero-grid">
+
+    <div>
+      <div class="badge">Partnernetzwerk Berlin & Brandenburg</div>
+
+      <h1>
+        NEUE KUNDEN.
+        <span>PASSENDE AUFTRÄGE.</span>
+        FAIRE KONDITIONEN.
+      </h1>
+
+      <p>
+        AuftragDirekt bringt Menschen und Unternehmen, die eine konkrete Dienstleistung suchen,
+        mit passenden Anbietern aus Berlin und Brandenburg zusammen.
+        Als Partner erhältst du Kundenanfragen, die zu deinen angebotenen Leistungen
+        und deinem Tätigkeitsgebiet passen.
+      </p>
+
+      <p>
+        Du entscheidest bei jeder Anfrage selbst, ob der Auftrag für dein Unternehmen interessant ist
+        und ob du dem Kunden ein Angebot unterbreiten möchtest.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#partner-werden" class="btn btn-primary">Jetzt Partner werden →</a>
+        <a href="#konditionen" class="btn btn-secondary">Konditionen ansehen</a>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <h3>Die wichtigsten Vorteile</h3>
+
+      <div class="benefit">
+        <div class="benefit-icon">✓</div>
+        <div>
+          <strong>Keine monatliche Grundgebühr</strong>
+          <span>Die Registrierung und Teilnahme verursachen keine laufenden Fixkosten.</span>
+        </div>
+      </div>
+
+      <div class="benefit">
+        <div class="benefit-icon">✓</div>
+        <div>
+          <strong>Keine Kosten für erfolglose Anfragen</strong>
+          <span>Eine Provision wird erst relevant, wenn tatsächlich ein Auftrag zustande kommt.</span>
+        </div>
+      </div>
+
+      <div class="benefit">
+        <div class="benefit-icon">✓</div>
+        <div>
+          <strong>Keine Verpflichtung zur Auftragsannahme</strong>
+          <span>Du entscheidest selbst, welche Anfragen zu deinem Unternehmen passen.</span>
+        </div>
+      </div>
+
+      <div class="benefit">
+        <div class="benefit-icon">8%</div>
+        <div>
+          <strong>Erfolgsorientierte Vermittlungsprovision</strong>
+          <span>8 % des vereinbarten Auftragswertes bei erfolgreicher Vermittlung.</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="ablauf">
+  <div class="container">
+
+    <div class="section-head">
+      <div class="eyebrow">So funktioniert die Partnerschaft</div>
+      <h2>VOM PARTNERANTRAG ZUM NEUEN KUNDEN.</h2>
+      <p>
+        Die Zusammenarbeit soll einfach und transparent bleiben.
+      </p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">01</div>
+        <h3>Kostenlos bewerben</h3>
+        <p>
+          Du übermittelst uns Informationen zu deinem Unternehmen, deinen Leistungen
+          und deinem Tätigkeitsgebiet. Dabei gibst du an, welche AuftragDirekt-Bereiche
+          dein Unternehmen vollständig und zuverlässig abdecken kann.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">02</div>
+        <h3>Angaben prüfen</h3>
+        <p>
+          Wir prüfen deine Angaben und entscheiden, für welche Bereiche dein Unternehmen
+          in unser Partnernetzwerk aufgenommen werden kann. Je nach Branche können zusätzliche
+          Nachweise erforderlich sein.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">03</div>
+        <h3>Anfragen erhalten</h3>
+        <p>
+          Geht eine passende Anfrage ein, können wir sie an dein Unternehmen weiterleiten.
+          Du erhältst die relevanten Informationen zur ersten Einschätzung.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">04</div>
+        <h3>Selbst entscheiden</h3>
+        <p>
+          Du entscheidest bei jeder Anfrage selbst, ob du Interesse hast.
+          Es besteht keine Verpflichtung, ein Angebot abzugeben.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">05</div>
+        <h3>Eigenes Angebot erstellen</h3>
+        <p>
+          Preis, Leistungsumfang, Termin und weitere Konditionen vereinbarst du direkt mit dem Kunden.
+          AuftragDirekt gibt dir keine Verkaufspreise vor.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">06</div>
+        <h3>Nur bei Erfolg zahlen</h3>
+        <p>
+          Entscheidet sich der Kunde für dein Angebot und kommt aufgrund unserer Vermittlung ein Auftrag zustande,
+          fällt die vereinbarte Vermittlungsprovision von 8 % an.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="conditions" id="konditionen">
+  <div class="container">
+
+    <div class="section-head">
+      <div class="eyebrow">Transparente Konditionen</div>
+      <h2>WIR VERDIENEN, WENN DU ERFOLG HAST.</h2>
+      <p>
+        Unser Modell ist bewusst erfolgsorientiert. Du kaufst bei uns nicht einfach Kontaktdaten
+        einer Anfrage, ohne zu wissen, ob daraus überhaupt ein Auftrag entsteht.
+      </p>
+    </div>
+
+    <div class="condition-grid">
+      <div class="condition">
+        <strong>0 €</strong>
+        <span>Registrierung</span>
+      </div>
+
+      <div class="condition">
+        <strong>0 €</strong>
+        <span>monatliche Grundgebühr</span>
+      </div>
+
+      <div class="condition">
+        <strong>0 €</strong>
+        <span>für erfolglose Anfragen</span>
+      </div>
+
+      <div class="condition">
+        <strong>8 %</strong>
+        <span>bei erfolgreicher Vermittlung</span>
+      </div>
+    </div>
+
+    <div class="example">
+      <strong>Beispiel:</strong>
+      Bei einem vermittelten Auftrag über <strong>1.200 €</strong>
+      beträgt die Vermittlungsprovision <strong>96 €</strong>.
+      Kommt kein Auftrag zustande, fällt für diese Anfrage keine Vermittlungsprovision an.
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Unser Schwerpunkt</div>
+      <h2>BERLIN & BRANDENBURG.</h2>
+      <p>
+        AuftragDirekt konzentriert sich auf die Vermittlung von Dienstleistungen in Berlin und Brandenburg.
+        Wir möchten dafür ein regionales Netzwerk zuverlässiger Partnerunternehmen aufbauen.
+      </p>
+    </div>
+
+    <div class="region-box">
+      <h3>Welche Region deckt dein Unternehmen regulär ab?</h3>
+
+      <div class="region-options">
+        <div class="region-option">Berlin</div>
+        <div class="region-option">Brandenburg</div>
+        <div class="region-option">Berlin & Brandenburg</div>
+      </div>
+
+      <p>
+        Bei Dienstleistungen wie Buscharter, Kleinbus, Chauffeurservice, Umzügen sowie Möbel- und Sondertransporten
+        kann das Ziel selbstverständlich außerhalb von Berlin oder Brandenburg liegen.
+        Entscheidend ist, dass der vermittelte Auftrag in Berlin oder Brandenburg beginnt.
+      </p>
+
+      <div class="route-examples">
+        <div class="route ok">✓ Berlin → Hamburg</div>
+        <div class="route ok">✓ Potsdam → München</div>
+        <div class="route ok">✓ Brandenburg → Polen</div>
+        <div class="route no">✕ Bochum → Dortmund</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="bereiche">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Welche Partner suchen wir?</div>
+      <h2>DEINE LEISTUNG. DEIN BEREICH.</h2>
+      <p>
+        Wir suchen Unternehmen, die mindestens einen unserer Vermittlungsbereiche vollständig,
+        professionell und zuverlässig abdecken können.
+      </p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service">🚌 Buscharter mit Fahrer</div>
+      <div class="service">🚐 Kleinbus / Minibus mit Fahrer</div>
+      <div class="service">🚘 Chauffeur & Limousine</div>
+      <div class="service">🚚 Umzüge</div>
+      <div class="service">🗑️ Entrümpelung</div>
+      <div class="service">🚛 Möbel- & Sondertransporte</div>
+      <div class="service">🎉 Event-Catering</div>
+      <div class="service">🍹 Mobile Cocktailbar</div>
+      <div class="service">🎧 DJ & Eventtechnik</div>
+      <div class="service">📸 Foto & Video</div>
+      <div class="service">🚻 Toilettenwagen</div>
+      <div class="service">🏗️ Containervermietung</div>
+      <div class="service">🌳 Baum & Garten</div>
+      <div class="service">☀️ Photovoltaik</div>
+    </div>
+
+    <div class="example">
+      Bitte wähle später im Partnerformular nur Bereiche aus,
+      die dein Unternehmen <strong>vollständig und zuverlässig</strong> übernehmen kann.
+      Ein Unternehmen kann selbstverständlich mehrere Bereiche gleichzeitig abdecken.
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="control-box">
+      <div class="eyebrow">Du behältst die Kontrolle</div>
+      <h2>DEIN UNTERNEHMEN. DEINE ENTSCHEIDUNG.</h2>
+
+      <p>
+        Auch als Partner von AuftragDirekt bleibst du vollständig selbstständig.
+        Der eigentliche Vertrag über die Dienstleistung kommt grundsätzlich direkt
+        zwischen deinem Unternehmen und dem Kunden zustande.
+      </p>
+
+      <div class="control-list">
+        <div class="control-item">✓ Du bestimmst deine Preise</div>
+        <div class="control-item">✓ Du entscheidest über deine Kapazitäten</div>
+        <div class="control-item">✓ Du entscheidest über Termine</div>
+        <div class="control-item">✓ Du entscheidest, welche Aufträge du annimmst</div>
+      </div>
+
+      <p>
+        AuftragDirekt übernimmt die Vermittlung und wird nicht zum ausführenden Dienstleister.
+        Das Partnerunternehmen bleibt insbesondere für die fachgerechte Durchführung,
+        eigene Angebote und Rechnungen sowie erforderliche Genehmigungen,
+        Zulassungen, Versicherungen und sonstige gesetzliche Voraussetzungen verantwortlich.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="partner-werden">
+  <div class="container">
+
+    <div class="section-head">
+      <div class="eyebrow">Partnerbewerbung</div>
+      <h2>JETZT KOSTENLOS PARTNER WERDEN.</h2>
+      <p>
+        Du möchtest dein Unternehmen für passende Kundenanfragen von AuftragDirekt registrieren?
+        Dann sende uns deine Partnerbewerbung.
+      </p>
+    </div>
+
+    <form
+      class="form-wrap"
+      action="https://formspree.io/f/DEINE_PARTNER_FORM_ID"
+      method="POST"
+    >
+      <div class="form-grid">
+
+        <div class="form-group">
+          <label class="field-label">Firmenname *</label>
+          <input type="text" name="firmenname" required>
+        </div>
+
+        <div class="form-group">
+          <label class="field-label">Rechtsform</label>
+          <input type="text" name="rechtsform" placeholder="z. B. Einzelunternehmen, GmbH">
+        </div>
+
+        <div class="form-group">
+          <label class="field-label">Ansprechpartner – Vorname *</label>
+          <input type="text" name="vorname" required>
+        </div>
+
+        <div class="form-group">
+          <label class="field-label">Ansprechpartner – Nachname *</label>
+          <input type="text" name="nachname" required>
+        </div>
+
+        <div class="form-group full">
+          <label class="field-label">Geschäftsanschrift *</label>
+          <input type="text" name="anschrift" placeholder="Straße, Hausnummer, PLZ, Ort" required>
+        </div>
+
+        <div class="form-group">
+          <label class="field-label">Telefon *</label>
+          <input type="tel" name="telefon" required>
+        </div>
+
+        <div class="form-group">
+          <label class="field-label">E-Mail *</label>
+          <input type="email" name="email" required>
+        </div>
+
+        <div class="form-group full">
+          <label class="field-label">Website</label>
+          <input type="url" name="website" placeholder="https://...">
+        </div>
+
+        <div class="form-group full">
+          <label class="field-label">Welche Bereiche kann dein Unternehmen vollständig abdecken? *</label>
+
+          <div class="service-select-grid">
+            <div class="check"><input type="checkbox" id="p1" name="bereiche" value="Buscharter"><label for="p1">🚌 Buscharter mit Fahrer</label></div>
+            <div class="check"><input type="checkbox" id="p2" name="bereiche" value="Kleinbus"><label for="p2">🚐 Kleinbus / Minibus</label></div>
+            <div class="check"><input type="checkbox" id="p3" name="bereiche" value="Chauffeur"><label for="p3">🚘 Chauffeur & Limousine</label></div>
+            <div class="check"><input type="checkbox" id="p4" name="bereiche" value="Umzüge"><label for="p4">🚚 Umzüge</label></div>
+            <div class="check"><input type="checkbox" id="p5" name="bereiche" value="Entrümpelung"><label for="p5">🗑️ Entrümpelung</label></div>
+            <div class="check"><input type="checkbox" id="p6" name="bereiche" value="Sondertransporte"><label for="p6">🚛 Möbel- & Sondertransporte</label></div>
+            <div class="check"><input type="checkbox" id="p7" name="bereiche" value="Event-Catering"><label for="p7">🎉 Event-Catering</label></div>
+            <div class="check"><input type="checkbox" id="p8" name="bereiche" value="Mobile Cocktailbar"><label for="p8">🍹 Mobile Cocktailbar</label></div>
+            <div class="check"><input type="checkbox" id="p9" name="bereiche" value="DJ & Eventtechnik"><label for="p9">🎧 DJ & Eventtechnik</label></div>
+            <div class="check"><input type="checkbox" id="p10" name="bereiche" value="Foto & Video"><label for="p10">📸 Foto & Video</label></div>
+            <div class="check"><input type="checkbox" id="p11" name="bereiche" value="Toilettenwagen"><label for="p11">🚻 Toilettenwagen</label></div>
+            <div class="check"><input type="checkbox" id="p12" name="bereiche" value="Containervermietung"><label for="p12">🏗️ Containervermietung</label></div>
+            <div class="check"><input type="checkbox" id="p13" name="bereiche" value="Baum & Garten"><label for="p13">🌳 Baum & Garten</label></div>
+            <div class="check"><input type="checkbox" id="p14" name="bereiche" value="Photovoltaik"><label for="p14">☀️ Photovoltaik</label></div>
+          </div>
+        </div>
+
+        <div class="form-group full">
+          <label class="field-label">Welche Region deckt dein Unternehmen regulär ab? *</label>
+          <select name="region" required>
+            <option value="">Bitte auswählen</option>
+            <option>Berlin</option>
+            <option>Brandenburg</option>
+            <option>Berlin & Brandenburg</option>
+          </select>
+        </div>
+
+        <div class="form-group full">
+          <label class="field-label">Sind Ziele außerhalb von Berlin/Brandenburg möglich?</label>
+          <select name="ueberregionale_ziele">
+            <option>Für meine Dienstleistung nicht relevant</option>
+            <option>Deutschlandweit</option>
+            <option>Europaweit</option>
+            <option>Nach individueller Absprache</option>
+            <option>Nein</option>
+          </select>
+        </div>
+
+        <div class="form-group full">
+          <label class="field-label">Beschreibe deine Leistungen *</label>
+          <textarea
+            name="leistungsbeschreibung"
+            placeholder="Beschreibe kurz, welche Leistungen dein Unternehmen innerhalb der ausgewählten Bereiche anbietet."
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group full">
+          <label class="field-label">Weitere Angaben / Nachricht</label>
+          <textarea
+            name="nachricht"
+            placeholder="Kapazitäten, Besonderheiten, Einsatzzeiten oder weitere Informationen ..."
+          ></textarea>
+        </div>
+
+      </div>
+
+      <label class="consent">
+        <input type="checkbox" name="bestaetigung" required>
+        <span>
+          Ich bestätige, dass die gemachten Unternehmensangaben korrekt sind und die ausgewählten
+          Leistungsbereiche von meinem Unternehmen grundsätzlich vollständig angeboten werden können.
+          Ich bin mit einer Kontaktaufnahme durch AuftragDirekt bezüglich einer möglichen Partnerschaft einverstanden.
+        </span>
+      </label>
+
+      <div class="note">
+        Informationen zur Verarbeitung deiner Daten findest du in unserer
+        <a href="datenschutz.html" style="color:#77a7ff;font-weight:700;">Datenschutzerklärung</a>.
+        Mit dem Absenden der Partnerbewerbung entstehen noch keine Kosten und noch keine kostenpflichtige Partnerschaft.
+        Die Bedingungen der Zusammenarbeit und die Vermittlungsprovision werden vor Aufnahme als Vermittlungspartner vereinbart.
+      </div>
+
+      <div style="margin-top:22px;">
+        <button type="submit" class="btn btn-primary">
+          Kostenlos als Partner bewerben →
+        </button>
+      </div>
+    </form>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div>© 2026 AuftragDirekt</div>
+
+    <div class="footer-links">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="anbieter.html">Für Anbieter</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const navLinks = document.getElementById("navLinks");
+
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    menuToggle.textContent = navLinks.classList.contains("active") ? "✕" : "☰";
+  });
+
+  document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("active");
+      menuToggle.textContent = "☰";
+    });
+  });
+</script>
+
 </body>
 </html>
