@@ -969,14 +969,91 @@
 
     <!-- QUICK SEARCH -->
 
-    <div
-      class="hero-panel"
-      id="anfrage"
-    >
+   <div class="hero-panel" id="anfrage">
 
-      <div class="panel-title">
-        Was möchtest du anfragen?
-      </div>
+  <div class="panel-title">
+    Was möchtest du anfragen?
+  </div>
+
+  <div class="service-selector">
+
+    <label for="serviceSelect">
+      Leistung auswählen
+    </label>
+
+    <select
+      id="serviceSelect"
+      onchange="openServicePage(this.value)"
+    >
+      <option value="" selected disabled>
+        Bitte Leistung auswählen
+      </option>
+
+      <option value="buscharter.html">
+        🚌 Buscharter mit Fahrer
+      </option>
+
+      <option value="kleinbus.html">
+        🚐 Kleinbus / Minibus mit Fahrer
+      </option>
+
+      <option value="chauffeur.html">
+        🚘 Chauffeur- / Limousinenservice
+      </option>
+
+      <option value="umzug.html">
+        🚚 Umzug
+      </option>
+
+      <option value="entruempelung.html">
+        🗑️ Entrümpelung
+      </option>
+
+      <option value="sondertransport.html">
+        🚛 Möbel- / Sondertransport
+      </option>
+
+      <option value="catering.html">
+        🎉 Event-Catering
+      </option>
+
+      <option value="cocktailbar.html">
+        🍹 Mobile Cocktailbar
+      </option>
+
+      <option value="dj-eventtechnik.html">
+        🎧 DJ / Eventtechnik
+      </option>
+
+      <option value="fotograf.html">
+        📸 Fotograf / Videograf
+      </option>
+
+      <option value="toilettenwagen.html">
+        🚻 Toilettenwagen
+      </option>
+
+      <option value="container.html">
+        🏗️ Containervermietung
+      </option>
+
+      <option value="garten.html">
+        🌳 Baumfällung / Gartenarbeiten
+      </option>
+
+      <option value="photovoltaik.html">
+        ☀️ Photovoltaik
+      </option>
+
+    </select>
+
+  </div>
+
+  <div class="panel-note">
+    Leistung auswählen und direkt Anfrage starten
+  </div>
+
+</div>
 
       <form class="quick-search">
 
