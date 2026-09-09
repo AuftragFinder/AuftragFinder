@@ -3,9 +3,438 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AuftragDirekt</title>
+
+  <title>Impressum | AuftragDirekt</title>
+
+  <meta
+    name="description"
+    content="Impressum und Anbieterkennzeichnung von AuftragDirekt, betrieben von Alexander Nacke unter Monster Digital Solutions."
+  >
+
+  <style>
+    :root {
+      --bg: #07111f;
+      --card: rgba(255,255,255,.05);
+      --line: rgba(255,255,255,.10);
+      --text: #f7f9fc;
+      --muted: #aab6c5;
+      --blue: #4f8cff;
+      --blue-2: #77a7ff;
+      --cyan: #4ce0d2;
+      --shadow: 0 24px 70px rgba(0,0,0,.28);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at 15% 10%, rgba(79,140,255,.12), transparent 28%),
+        radial-gradient(circle at 85% 18%, rgba(76,224,210,.07), transparent 24%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--blue-2);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: min(980px, 92%);
+      margin: auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(7,17,31,.88);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      color: #fff;
+      font-size: 1.35rem;
+      font-weight: 800;
+    }
+
+    .logo-box {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--blue), var(--cyan));
+      box-shadow: 0 10px 28px rgba(79,140,255,.25);
+      color: #fff;
+    }
+
+    .logo span:last-child {
+      color: var(--cyan);
+    }
+
+    .back {
+      display: inline-flex;
+      padding: 11px 16px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid var(--line);
+      color: #fff;
+      font-weight: 700;
+      font-size: .88rem;
+    }
+
+    .hero {
+      padding: 84px 0 42px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 13px;
+      border-radius: 999px;
+      border: 1px solid rgba(76,224,210,.22);
+      background: rgba(76,224,210,.08);
+      color: var(--cyan);
+      font-size: .75rem;
+      font-weight: 800;
+      letter-spacing: .8px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin-top: 18px;
+      font-size: clamp(2.8rem, 7vw, 5rem);
+      line-height: 1;
+      letter-spacing: -2px;
+    }
+
+    .hero p {
+      margin-top: 18px;
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .content {
+      margin-bottom: 80px;
+      padding: 34px;
+      border-radius: 24px;
+      background: rgba(255,255,255,.035);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+
+    .block {
+      padding: 6px 0 29px;
+      margin-bottom: 28px;
+      border-bottom: 1px solid rgba(255,255,255,.07);
+    }
+
+    .block:last-child {
+      border-bottom: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    h2 {
+      margin-bottom: 13px;
+      font-size: 1.55rem;
+      line-height: 1.2;
+    }
+
+    p {
+      margin: 9px 0;
+      color: #ccd5e0;
+    }
+
+    .address {
+      margin-top: 14px;
+      padding: 18px 20px;
+      border-radius: 15px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      color: #e7edf4;
+    }
+
+    .notice {
+      margin-top: 14px;
+      padding: 18px 20px;
+      border-radius: 15px;
+      background: rgba(76,224,210,.07);
+      border: 1px solid rgba(76,224,210,.18);
+      color: #cbd8e5;
+    }
+
+    .small {
+      color: #8996a7;
+      font-size: .88rem;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 35px 0;
+      color: #8390a1;
+      font-size: .82rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 700px) {
+      .content {
+        padding: 23px;
+      }
+
+      .nav {
+        min-height: 68px;
+      }
+
+      .hero {
+        padding-top: 62px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <!-- Inhalt folgt -->
+
+<header>
+  <div class="container nav">
+
+    <a href="index.html" class="logo">
+      <span class="logo-box">A</span>
+      Auftrag<span>Direkt</span>
+    </a>
+
+    <a class="back" href="index.html">
+      ← Zur Startseite
+    </a>
+
+  </div>
+</header>
+
+<main>
+
+  <div class="container hero">
+
+    <span class="badge">Anbieterkennzeichnung</span>
+
+    <h1>Impressum</h1>
+
+    <p>
+      Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG)
+      für das Online-Angebot AuftragDirekt.
+    </p>
+
+  </div>
+
+  <div class="container content">
+
+    <section class="block">
+
+      <h2>Diensteanbieter</h2>
+
+      <div class="address">
+        <strong>Alexander Nacke</strong><br>
+        handelnd unter <strong>Monster Digital Solutions</strong><br>
+        c/o IP-Management #10695<br>
+        Ludwig-Erhard-Straße 18<br>
+        20459 Hamburg<br>
+        Deutschland
+      </div>
+
+    </section>
+
+    <section class="block">
+
+      <h2>Kontakt</h2>
+
+      <p>
+        E-Mail:
+        <a href="mailto:auftragfinder@gmail.com">
+          auftragfinder@gmail.com
+        </a>
+      </p>
+
+      <p class="small">
+        Die Kontakt-E-Mail-Adresse wird künftig möglicherweise durch eine
+        eigene AuftragDirekt-Adresse ersetzt.
+      </p>
+
+    </section>
+
+    <section class="block">
+
+      <h2>Geschäftsbezeichnung</h2>
+
+      <p>
+        Das Vermittlungsangebot wird unter der Bezeichnung
+        <strong>AuftragDirekt</strong> betrieben.
+      </p>
+
+      <p>
+        Betreiber ist Alexander Nacke, handelnd unter
+        <strong>Monster Digital Solutions</strong>.
+      </p>
+
+    </section>
+
+    <section class="block">
+
+      <h2>Hinweis zur Vermittlungstätigkeit</h2>
+
+      <div class="notice">
+        <strong>AuftragDirekt ist ausschließlich als Vermittler tätig.</strong>
+      </div>
+
+      <p>
+        AuftragDirekt führt die über diese Website angefragten Dienstleistungen
+        grundsätzlich nicht selbst aus. Kundenanfragen werden an geeignete,
+        rechtlich selbstständige Partnerunternehmen vermittelt.
+      </p>
+
+      <p>
+        Ein Vertrag über die eigentliche Dienstleistung kommt – sofern ein
+        Angebot angenommen wird – grundsätzlich ausschließlich zwischen dem
+        Kunden und dem jeweiligen Partnerunternehmen zustande.
+      </p>
+
+      <p>
+        Das jeweilige Partnerunternehmen ist insbesondere für Angebot,
+        Preisgestaltung, Vertragsabschluss, Durchführung, Abrechnung,
+        Gewährleistung sowie die fachlich und rechtlich ordnungsgemäße
+        Erbringung seiner Leistung verantwortlich.
+      </p>
+
+      <p>
+        AuftragDirekt kann für eine erfolgreiche Vermittlung vom
+        Partnerunternehmen eine vereinbarte Vermittlungsprovision erhalten.
+      </p>
+
+    </section>
+
+    <section class="block">
+
+      <h2>Verantwortung für eigene Inhalte</h2>
+
+      <p>
+        Die auf dieser Website bereitgestellten eigenen Inhalte werden mit
+        angemessener Sorgfalt erstellt. Soweit auf der Website Informationen
+        über Leistungen von Partnerunternehmen dargestellt oder weitergegeben
+        werden, bleiben die jeweiligen Partner für ihre eigenen Angebote,
+        Leistungsangaben und die Durchführung ihrer Dienstleistungen
+        verantwortlich.
+      </p>
+
+    </section>
+
+    <section class="block">
+
+      <h2>Externe Links</h2>
+
+      <p>
+        Diese Website kann Links zu externen Websites Dritter enthalten.
+        Für die Inhalte und die Datenverarbeitung auf externen Websites ist
+        grundsätzlich der jeweilige Betreiber verantwortlich.
+      </p>
+
+    </section>
+
+    <section class="block">
+
+      <h2>Verbraucherstreitbeilegung</h2>
+
+      <p>
+        Soweit keine gesetzliche Verpflichtung besteht, nimmt AuftragDirekt
+        derzeit nicht an Streitbeilegungsverfahren vor einer
+        Verbraucherschlichtungsstelle teil.
+      </p>
+
+      <p class="small">
+        Ein Hinweis auf die frühere EU-Plattform zur Online-Streitbeilegung
+        ist nicht enthalten, da diese Plattform eingestellt wurde.
+      </p>
+
+    </section>
+
+    <section class="block">
+
+      <h2>Datenschutz</h2>
+
+      <p>
+        Informationen zur Verarbeitung personenbezogener Daten finden Sie in
+        unserer
+        <a href="datenschutz.html">Datenschutzerklärung</a>.
+      </p>
+
+    </section>
+
+    <section class="block">
+
+      <h2>Stand</h2>
+
+      <p>Stand: 10. September 2026</p>
+
+    </section>
+
+  </div>
+
+</main>
+
+<footer>
+
+  <div class="container footer-inner">
+
+    <div>
+      © 2026 AuftragDirekt · Monster Digital Solutions
+    </div>
+
+    <div class="footer-links">
+      <a href="index.html">Start</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="anbieter.html">Für Anbieter</a>
+    </div>
+
+  </div>
+
+</footer>
+
 </body>
 </html>
