@@ -17,7 +17,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@500;600;700;800&display=swap"
     rel="stylesheet"
-  ><script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=JUnohnlndCPrWA1KU41QGej3aCUus5S6Ipho_C3FqyVsyIP202Il17Am3PTP3LFwlwFOF1D-HFhDgXtFSEE2Iij5wYhyVrNyM88UDuPQ4RZqd1NatLxKDpItc9AGinP1dh4oHNOE3bQ9Ha1iPw_KulsFrUPNKZaxsl1B_pVH-kw_6xA0UoIP_j-CkVOS12tH9_hxKBmgg0QgKWCDtdWILgtHVWn2QfP1HYH19xtIg5JPeflBvzK2bnXCTi1Zm2-1KJCrdggmPaCmFwZfLBJh19mAK-2Jp6i6N_6wYA3ZWVFuQe9q_M6hgTS7OokiUTxWqf1B92QCBl9f8u75iZ5cbA" charset="UTF-8"></script><style>
+  ><script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=wu3IJOkzw0eU17i3KfSU2fvZCXHuBJV-Jotv1UirBQ6bKZ9XhuiY17XUPaOCTec-2eLuakt5ZZ2BHe5ki9uUdSihzrflZbgVeHyQGq0MPJ0B1KdvCdffe5DkyvQkyFpaHgL6DZ_h0diAkoU7eVSd16OyRr6T9m3pk7i3f2srLvTHqFKQm153OcCRl9z3jxi3RA-_iGYCFdG6blALLUgssVNSxzm2navb4xwYgPB6KQDeCKhEJNRI5SkGp6VFuW9Qfe2KPGTgmvhs44XhU36OmMg7Qv4xzigfy_X10VBVsoLf0P9nIWcn8NI4CCHxL8M7" charset="UTF-8"></script><style>
     :root {
       --bg: #07111f;
       --bg-soft: #0d1a2b;
@@ -726,57 +726,6 @@
       color: #afbac8;
     }
 
-    
-    /* =========================
-       VERMITTLER-HINWEIS
-    ========================= */
-
-    .broker-note {
-      padding-top: 30px;
-      padding-bottom: 90px;
-    }
-
-    .broker-note-box {
-      padding: 28px 30px;
-      border-radius: 24px;
-      background:
-        linear-gradient(135deg, rgba(79,140,255,.08), rgba(76,224,210,.05));
-      border: 1px solid rgba(119,167,255,.22);
-      box-shadow: 0 18px 50px rgba(0,0,0,.18);
-    }
-
-    .broker-note-kicker {
-      color: var(--cyan);
-      font-size: .78rem;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: 1.2px;
-      margin-bottom: 10px;
-    }
-
-    .broker-note-box h2 {
-      font-family: "Manrope", sans-serif;
-      font-size: clamp(1.8rem,4vw,2.8rem);
-      line-height: 1.1;
-      letter-spacing: -1.4px;
-      margin-bottom: 14px;
-    }
-
-    .broker-note-box p {
-      color: var(--muted);
-      font-size: .94rem;
-      margin-top: 10px;
-    }
-
-    .broker-note-box strong {
-      color: #ffffff;
-    }
-
-    .broker-note-box a {
-      color: var(--blue-2);
-      font-weight: 800;
-    }
-
     /* =========================
        FOOTER
     ========================= */
@@ -803,6 +752,170 @@
     .footer-links {
       display: flex;
       gap: 18px;
+    }
+
+
+    /* =========================
+       REGIONAL BADGE / TRUST
+    ========================= */
+
+    .region-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 14px;
+      padding: 9px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(76,224,210,.22);
+      background: rgba(76,224,210,.08);
+      color: var(--cyan);
+      font-size: .79rem;
+      font-weight: 800;
+    }
+
+    .hero-trustline {
+      margin-top: 16px !important;
+      color: #c6d1df !important;
+      font-size: .94rem !important;
+      font-weight: 600;
+    }
+
+    /* =========================
+       WHY AUFTRAGDIREKT
+    ========================= */
+
+    .why-section {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .why-card {
+      padding: 24px;
+      border-radius: 20px;
+      background: rgba(255,255,255,.05);
+      border: 1px solid var(--line);
+    }
+
+    .why-icon {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border-radius: 13px;
+      background: linear-gradient(
+        135deg,
+        rgba(79,140,255,.20),
+        rgba(76,224,210,.10)
+      );
+      margin-bottom: 17px;
+      font-size: 1.35rem;
+    }
+
+    .why-card h3 {
+      margin-bottom: 7px;
+      font-size: 1rem;
+    }
+
+    .why-card p {
+      color: var(--muted);
+      font-size: .86rem;
+    }
+
+    /* =========================
+       VERMITTLER-HINWEIS
+    ========================= */
+
+    .broker-strip {
+      padding: 0 0 76px;
+    }
+
+    .broker-strip-box {
+      padding: 18px 22px;
+      border-radius: 17px;
+      background: rgba(79,140,255,.07);
+      border: 1px solid rgba(119,167,255,.20);
+      color: #bdcad8;
+      font-size: .9rem;
+    }
+
+    .broker-strip-box strong {
+      color: #fff;
+    }
+
+    /* =========================
+       PARTNER CTA
+    ========================= */
+
+    .partner-mini {
+      padding-top: 25px;
+      padding-bottom: 80px;
+    }
+
+    .partner-mini-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+      padding: 28px 30px;
+      border-radius: 22px;
+      background: linear-gradient(
+        135deg,
+        rgba(79,140,255,.08),
+        rgba(76,224,210,.04)
+      );
+      border: 1px solid var(--line);
+    }
+
+    .partner-mini h3 {
+      margin-bottom: 5px;
+      font-size: 1.15rem;
+    }
+
+    .partner-mini p {
+      color: var(--muted);
+      font-size: .88rem;
+    }
+
+    .partner-mini a {
+      flex-shrink: 0;
+    }
+
+    /* =========================
+       USECASE LINKS
+    ========================= */
+
+    .usecase-link {
+      display: inline-block;
+      margin-top: 16px;
+      color: var(--blue-2);
+      font-size: .84rem;
+      font-weight: 800;
+    }
+
+    /* =========================
+       FOOTER EXTRA
+    ========================= */
+
+    .footer-brand {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .footer-brand strong {
+      color: #c7d2df;
+      font-size: .9rem;
+    }
+
+    .footer-brand span {
+      color: #7f8b9b;
+      font-size: .78rem;
     }
 
     /* =========================
@@ -869,6 +982,15 @@
 
       .hero-stats {
         gap: 22px;
+      }
+
+      .why-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .partner-mini-box {
+        flex-direction: column;
+        align-items: flex-start;
       }
 
     }
@@ -958,6 +1080,10 @@
     min-height: 58px;
   }
 
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
 }
   </style>
 </head>
@@ -1043,6 +1169,10 @@
         ✓ Kostenlos & unverbindlich
       </div>
 
+      <div class="region-badge">
+        📍 Vermittlungsschwerpunkt Berlin & Brandenburg
+      </div>
+
       <h1>
         DER PASSENDE
         <span>ANBIETER</span>
@@ -1051,9 +1181,13 @@
 
       <p>
         Du beschreibst kurz, was du brauchst.
-        Wir vermitteln deine Anfrage an passende Partner
-        aus der jeweiligen Branche.
+        AuftragDirekt prüft deine Anfrage und vermittelt sie an passende
+        Dienstleister aus der jeweiligen Branche.
         Einfach, schnell und ohne lange Suche.
+      </p>
+
+      <p class="hero-trustline">
+        Kostenlose Anfrage · regionale Anbieter · direkte Kontaktaufnahme · keine Buchungspflicht
       </p>
 
       <div class="hero-actions">
@@ -1074,24 +1208,6 @@
 
       </div>
 
-      <div class="hero-stats">
-
-        <div class="stat">
-          <strong>14+</strong>
-          <span>Vermittlungsbereiche</span>
-        </div>
-
-        <div class="stat">
-          <strong>1 Anfrage</strong>
-          <span>passende Partner</span>
-        </div>
-
-        <div class="stat">
-          <strong>0 €</strong>
-          <span>Anfragekosten</span>
-        </div>
-
-      </div>
 
     </div>
 
@@ -1199,29 +1315,60 @@
      TRUST
 ========================= -->
 
-<div class="trustbar">
 
-  <div class="container trust-inner">
+<!-- =========================
+     WARUM AUFTRAGDIREKT
+========================= -->
 
-    <div>
-      ✓ Keine versteckten Kosten
+<section class="why-section">
+  <div class="container">
+
+    <div class="section-head">
+      <div class="eyebrow">
+        Warum AuftragDirekt?
+      </div>
+
+      <h2>
+        EINFACH ANFRAGEN.
+        DIREKT VERMITTELT.
+      </h2>
+
+      <p>
+        Du stellst eine Anfrage – wir kümmern uns darum,
+        dass sie bei passenden Anbietern aus deinem Bereich landet.
+      </p>
     </div>
 
-    <div>
-      ✓ Regionale Partner
-    </div>
+    <div class="why-grid">
 
-    <div>
-      ✓ Direkte Anfrage
-    </div>
+      <div class="why-card">
+        <div class="why-icon">💶</div>
+        <h3>Kostenlose Anfrage</h3>
+        <p>Für dich entstehen durch die Anfrage bei AuftragDirekt keine Anfragekosten.</p>
+      </div>
 
-    <div>
-      ✓ Für Privat & Gewerbe
+      <div class="why-card">
+        <div class="why-icon">📍</div>
+        <h3>Regionaler Schwerpunkt</h3>
+        <p>Wir konzentrieren uns auf passende Anbieter aus Berlin und Brandenburg.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">📞</div>
+        <h3>Direkter Kontakt</h3>
+        <p>Der passende Anbieter meldet sich direkt bei dir und klärt die Details persönlich.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">✓</div>
+        <h3>Keine Buchungspflicht</h3>
+        <p>Eine Anfrage verpflichtet dich nicht dazu, ein späteres Angebot anzunehmen.</p>
+      </div>
+
     </div>
 
   </div>
-
-</div>
+</section>
 
 
 <!-- =========================
@@ -1294,7 +1441,7 @@
           Transfers und Shuttlefahrten.
         </p>
 
-        <a href="kleinbus.html">Kleinbus anfragen →</a>
+        <a href="kleinbus.html" class="category-link">Kleinbus anfragen →</a>
 
       </div>
 
@@ -1314,7 +1461,7 @@
           besondere Anlässe und Transfers.
         </p>
 
-        <a href="chauffeur.html">Chauffeur anfragen →</a>
+        <a href="chauffeur.html" class="category-link">Chauffeur anfragen →</a>
 
       </div>
 
@@ -1334,7 +1481,7 @@
           und gewerbliche Umzüge.
         </p>
 
-       <a href="umzug.html">Umzug anfragen →</a>
+       <a href="umzug.html" class="category-link">Umzug anfragen →</a>
 
       </div>
 
@@ -1354,7 +1501,7 @@
           oder komplette Haushaltsauflösung.
         </p>
 
-       <a href="entruempelung.html">Entrümpelung anfragen →</a>
+       <a href="entruempelung.html" class="category-link">Entrümpelung anfragen →</a>
 
       </div>
 
@@ -1374,7 +1521,7 @@
           und besondere Transportaufgaben.
         </p>
 
-       <a href="sondertransport.html">Transport anfragen →</a>
+       <a href="sondertransport.html" class="category-link">Transport anfragen →</a>
 
       </div>
 
@@ -1394,7 +1541,7 @@
           Firmenfeiern, Geburtstage und Events.
         </p>
 
-      <a href="catering.html">Catering anfragen →</a>
+      <a href="catering.html" class="category-link">Catering anfragen →</a>
 
       </div>
 
@@ -1414,7 +1561,7 @@
           für private und gewerbliche Veranstaltungen.
         </p>
 
-        <a href="cocktailbar.html">Cocktailbar anfragen →</a>
+        <a href="cocktailbar.html" class="category-link">Cocktailbar anfragen →</a>
 
       </div>
 
@@ -1434,7 +1581,7 @@
           für Partys und Veranstaltungen.
         </p>
 
-        <a href="dj-eventtechnik.html">DJ & Technik anfragen →</a>
+        <a href="dj-eventtechnik.html" class="category-link">DJ & Technik anfragen →</a>
 
       </div>
 
@@ -1454,7 +1601,7 @@
           für Hochzeiten, Firmen und Events.
         </p>
 
-       <a href="fotograf.html">Fotograf anfragen →</a>
+       <a href="fotograf.html" class="category-link">Fotograf anfragen →</a>
 
       </div>
 
@@ -1474,7 +1621,7 @@
           für Veranstaltungen, Feste und Baustellen.
         </p>
 
-        <a href="toilettenwagen.html">Toilettenwagen anfragen →</a>
+        <a href="toilettenwagen.html" class="category-link">Toilettenwagen anfragen →</a>
 
       </div>
 
@@ -1494,7 +1641,7 @@
           Baustellen und größere Projekte.
         </p>
 
-        <a href="container.html">Container anfragen →</a>
+        <a href="container.html" class="category-link">Container anfragen →</a>
 
       </div>
 
@@ -1514,7 +1661,7 @@
           Gartenarbeiten und Rückschnitt.
         </p>
 
-        <a href="garten.html">Gartenservice anfragen →</a>
+        <a href="garten.html" class="category-link">Gartenservice anfragen →</a>
 
       </div>
 
@@ -1534,7 +1681,7 @@
           für Photovoltaikanlagen und Beratung.
         </p>
 
-        <a href="photovoltaik.html">PV-Angebot anfragen →</a>
+        <a href="photovoltaik.html" class="category-link">PV-Angebot anfragen →</a>
 
       </div>
 
@@ -1543,6 +1690,22 @@
 
   </div>
 
+</section>
+
+<!-- =========================
+     KURZER VERMITTLER-HINWEIS
+========================= -->
+
+<section class="broker-strip">
+  <div class="container">
+    <div class="broker-strip-box">
+      <strong>Hinweis:</strong>
+      AuftragDirekt vermittelt ausschließlich. AuftragDirekt führt die angefragte Dienstleistung
+      nicht selbst aus. Vertrag, Preis und Leistung werden direkt zwischen dir und dem jeweiligen
+      Anbieter vereinbart. Weitere Informationen findest du in unserer
+      <a href="datenschutz.html">Datenschutzerklärung</a>.
+    </div>
+  </div>
 </section>
 
 
@@ -1596,12 +1759,12 @@
         </div>
 
         <h3>
-          Passende Partner
+          Passende Anbieter
         </h3>
 
         <p>
-          Deine Anfrage wird von AuftragDirekt geprüft und an geeignete
-          Partner aus dem jeweiligen Bereich vermittelt.
+          AuftragDirekt prüft deine Anfrage und vermittelt sie an geeignete
+          Anbieter aus dem passenden Leistungsbereich.
         </p>
 
       </div>
@@ -1618,8 +1781,8 @@
         </h3>
 
         <p>
-          Der jeweilige Partner meldet sich direkt bei dir, klärt Details
-          und kann dir ein eigenes Angebot unterbreiten.
+          Der jeweilige Anbieter meldet sich direkt bei dir,
+          klärt offene Fragen und kann dir ein eigenes Angebot machen.
         </p>
 
       </div>
@@ -1674,6 +1837,7 @@
           DJ, Fotograf und Toilettenwagen
           können gemeinsam angefragt werden.
         </p>
+        <a href="#leistungen" class="usecase-link">Event-Leistungen ansehen →</a>
 
       </div>
 
@@ -1688,6 +1852,7 @@
           Umzug, Entrümpelung, Möbeltransport
           und Container lassen sich miteinander kombinieren.
         </p>
+        <a href="umzug.html" class="usecase-link">Umzug anfragen →</a>
 
       </div>
 
@@ -1702,6 +1867,7 @@
           Shuttle, Bus, Catering,
           Eventtechnik und Fotografie aus einer Hand vermittelt.
         </p>
+        <a href="#leistungen" class="usecase-link">Firmenevent planen →</a>
 
       </div>
 
@@ -1716,6 +1882,7 @@
           Gartenarbeiten, Baumfällung,
           Container und weitere passende Services.
         </p>
+        <a href="garten.html" class="usecase-link">Gartenservice ansehen →</a>
 
       </div>
 
@@ -1729,60 +1896,26 @@
 
 
 <!-- =========================
-     HINWEIS ZUR VERMITTLUNG
+     PARTNERHINWEIS
 ========================= -->
 
-<section class="broker-note">
+<section class="partner-mini">
   <div class="container">
+    <div class="partner-mini-box">
 
-    <div class="broker-note-box">
-
-      <div class="broker-note-kicker">
-        Wichtiger Hinweis zur Vermittlung
+      <div>
+        <h3>Du bist Dienstleister aus Berlin oder Brandenburg?</h3>
+        <p>
+          Erfahre, wie du als Partnerunternehmen passende Kundenanfragen
+          über AuftragDirekt erhalten kannst.
+        </p>
       </div>
 
-      <h2>
-        AUFTRAGDIREKT IST AUSSCHLIESSLICH VERMITTLER.
-      </h2>
-
-      <p>
-        AuftragDirekt führt die auf dieser Website angefragten Dienstleistungen
-        <strong>nicht selbst aus</strong>, sondern vermittelt Kundenanfragen an
-        geeignete, rechtlich selbstständige Partnerunternehmen.
-      </p>
-
-      <p>
-        Wenn du über AuftragDirekt eine Anfrage stellst, können die für die
-        Bearbeitung erforderlichen Angaben an <strong>einen oder mehrere passende
-        Partner</strong> weitergegeben werden. Welcher und wie viele Partner eine
-        Anfrage erhalten, entscheiden wir abhängig von Art, Umfang und Region des
-        jeweiligen Auftrags.
-      </p>
-
-      <p>
-        Der jeweilige Partner nimmt anschließend direkt Kontakt mit dir auf,
-        klärt offene Fragen und erstellt gegebenenfalls ein eigenes Angebot.
-        Ein Vertrag über die eigentliche Dienstleistung kommt – sofern du ein
-        Angebot annimmst – <strong>ausschließlich zwischen dir und dem jeweiligen
-        Partnerunternehmen</strong> zustande.
-      </p>
-
-      <p>
-        Das Partnerunternehmen ist insbesondere für Angebot, Preisgestaltung,
-        Vertragsabschluss, Durchführung, Abrechnung, Gewährleistung sowie die
-        ordnungsgemäße und rechtlich zulässige Erbringung seiner Leistung
-        verantwortlich. AuftragDirekt erhält bei erfolgreicher Vermittlung eine
-        mit dem Partnerunternehmen vereinbarte Vermittlungsprovision.
-      </p>
-
-      <p>
-        Weitere Informationen zur Verarbeitung und Weitergabe personenbezogener
-        Daten findest du in unserer
-        <a href="datenschutz.html">Datenschutzerklärung</a>.
-      </p>
+      <a href="anbieter.html" class="btn btn-secondary">
+        Für Anbieter →
+      </a>
 
     </div>
-
   </div>
 </section>
 
@@ -1793,12 +1926,13 @@
 
   <div class="container footer-inner">
 
-    <div>
-      © 2026 AuftragDirekt
+    <div class="footer-brand">
+      <strong>© 2026 AuftragDirekt · Monster Digital Solutions</strong>
+      <span>Vermittlungsplattform · Schwerpunkt Berlin & Brandenburg</span>
     </div>
 
     <div>
-      Reine Vermittlungsplattform · keine eigene Leistungsausführung
+      AuftragDirekt vermittelt ausschließlich und führt keine eigenen Dienstleistungen aus.
     </div>
 
     <div class="footer-links">
