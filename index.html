@@ -1,0 +1,1812 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AuftragDirekt | Passende Anbieter für deinen Auftrag</title>
+
+  <meta
+    name="description"
+    content="AuftragDirekt vermittelt passende Dienstleister für Buscharter, Umzüge, Entrümpelung, Events, Transporte, Gartenarbeiten, Photovoltaik und mehr."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    :root {
+      --bg: #07111f;
+      --bg-soft: #0d1a2b;
+      --card: rgba(255,255,255,.06);
+      --card-strong: rgba(255,255,255,.09);
+      --line: rgba(255,255,255,.10);
+
+      --text: #f7f9fc;
+      --muted: #aab6c5;
+
+      --blue: #4f8cff;
+      --blue-2: #77a7ff;
+      --cyan: #4ce0d2;
+      --green: #72e6a5;
+
+      --shadow: 0 24px 70px rgba(0,0,0,.35);
+      --radius: 24px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background:
+        radial-gradient(circle at 15% 15%, rgba(79,140,255,.14), transparent 28%),
+        radial-gradient(circle at 85% 20%, rgba(76,224,210,.08), transparent 24%),
+        var(--bg);
+
+      color: var(--text);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1180px, 92%);
+      margin: auto;
+    }
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+
+      background: rgba(7,17,31,.78);
+      backdrop-filter: blur(18px);
+
+      border-bottom: 1px solid rgba(255,255,255,.07);
+    }
+
+    .nav {
+      min-height: 78px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 30px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      font-family: "Manrope", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+
+    .logo-box {
+      width: 42px;
+      height: 42px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 13px;
+
+      background:
+        linear-gradient(135deg,var(--blue),var(--cyan));
+
+      color: white;
+
+      font-weight: 900;
+      font-size: 1.2rem;
+
+      box-shadow:
+        0 10px 30px rgba(79,140,255,.28);
+    }
+
+    .logo span {
+      color: var(--cyan);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 27px;
+
+      list-style: none;
+
+      font-size: .9rem;
+      font-weight: 700;
+    }
+
+    .nav-links a {
+      color: #dce5ef;
+      transition: .2s;
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    .nav-button {
+      padding: 12px 19px;
+
+      border-radius: 999px;
+
+      background:
+        linear-gradient(135deg,var(--blue),var(--cyan));
+
+      color: white !important;
+
+      box-shadow:
+        0 12px 30px rgba(79,140,255,.22);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      min-height: 100vh;
+
+      display: flex;
+      align-items: center;
+
+      padding-top: 125px;
+      padding-bottom: 80px;
+
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+
+      position: absolute;
+
+      width: 520px;
+      height: 520px;
+
+      right: -180px;
+      top: 130px;
+
+      border-radius: 50%;
+
+      background:
+        radial-gradient(circle, rgba(79,140,255,.20), transparent 68%);
+
+      filter: blur(20px);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.12fr .88fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+
+      padding: 9px 14px;
+
+      border-radius: 999px;
+
+      background: rgba(79,140,255,.10);
+      border: 1px solid rgba(119,167,255,.22);
+
+      color: var(--blue-2);
+
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: 1.1px;
+      text-transform: uppercase;
+
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      font-family: "Manrope",sans-serif;
+
+      font-size: clamp(3.5rem,7.5vw,6.8rem);
+      line-height: .98;
+
+      letter-spacing: -3px;
+
+      max-width: 850px;
+    }
+
+    .hero h1 span {
+      background:
+        linear-gradient(135deg,var(--blue-2),var(--cyan));
+
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      margin-top: 26px;
+
+      max-width: 680px;
+
+      color: var(--muted);
+
+      font-size: 1.08rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+
+      margin-top: 34px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+
+      padding: 15px 24px;
+
+      border-radius: 14px;
+
+      font-weight: 800;
+      transition: .2s ease;
+    }
+
+    .btn-primary {
+      background:
+        linear-gradient(135deg,var(--blue),var(--cyan));
+
+      color: white;
+
+      box-shadow:
+        0 15px 36px rgba(79,140,255,.22);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,.05);
+      border: 1px solid var(--line);
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255,255,255,.08);
+    }
+
+    .hero-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 34px;
+
+      margin-top: 42px;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.4rem;
+    }
+
+    .stat span {
+      color: #8794a6;
+      font-size: .82rem;
+    }
+
+    /* HERO CARD */
+
+    .hero-panel {
+      padding: 24px;
+
+      border-radius: 30px;
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255,255,255,.10),
+          rgba(255,255,255,.03)
+        );
+
+      border: 1px solid rgba(255,255,255,.10);
+
+      box-shadow: var(--shadow);
+
+      position: relative;
+    }
+
+    .hero-panel::before {
+      content: "";
+
+      position: absolute;
+      inset: -1px;
+
+      border-radius: 30px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(79,140,255,.22),
+          transparent 35%,
+          rgba(76,224,210,.10)
+        );
+
+      z-index: -1;
+    }
+
+    .panel-title {
+      font-size: .8rem;
+      text-transform: uppercase;
+      letter-spacing: 1.3px;
+
+      color: #8fa2b9;
+
+      margin-bottom: 15px;
+    }
+
+    .quick-search {
+      display: grid;
+      gap: 13px;
+    }
+
+    .quick-search label {
+      font-size: .78rem;
+      color: #8ea0b4;
+      font-weight: 700;
+    }
+
+    .quick-search select,
+    .quick-search input {
+      width: 100%;
+
+      padding: 15px 16px;
+
+      border-radius: 14px;
+
+      border: 1px solid rgba(255,255,255,.10);
+
+      background: rgba(255,255,255,.06);
+
+      color: white;
+
+      outline: none;
+
+      font-family: inherit;
+    }
+
+    .quick-search select option {
+      background: #0f1b2a;
+    }
+
+    .quick-search button {
+      border: none;
+      cursor: pointer;
+
+      margin-top: 5px;
+
+      width: 100%;
+
+      font-family: inherit;
+    }
+
+    .panel-note {
+      margin-top: 13px;
+
+      color: #7c8a9c;
+
+      font-size: .78rem;
+      text-align: center;
+    }
+
+    /* =========================
+       TRUST BAR
+    ========================= */
+
+    .trustbar {
+      background: rgba(255,255,255,.035);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+
+      padding: 20px 0;
+    }
+
+    .trust-inner {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      gap: 45px;
+
+      color: #aeb9c6;
+
+      font-size: .85rem;
+      font-weight: 700;
+    }
+
+    /* =========================
+       SECTION
+    ========================= */
+
+    section {
+      padding: 110px 0;
+    }
+
+    .section-head {
+      max-width: 780px;
+      margin-bottom: 46px;
+    }
+
+    .eyebrow {
+      color: var(--cyan);
+
+      font-size: .8rem;
+      font-weight: 900;
+
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+    }
+
+    .section-head h2 {
+      margin-top: 10px;
+
+      font-family: "Manrope",sans-serif;
+
+      font-size: clamp(2.6rem,5vw,4.5rem);
+      line-height: 1;
+
+      letter-spacing: -2px;
+    }
+
+    .section-head p {
+      margin-top: 15px;
+
+      color: var(--muted);
+
+      max-width: 650px;
+    }
+
+    /* =========================
+       CATEGORIES
+    ========================= */
+
+    .categories {
+      background:
+        linear-gradient(
+          180deg,
+          rgba(255,255,255,.015),
+          rgba(255,255,255,.03),
+          rgba(255,255,255,.015)
+        );
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 18px;
+    }
+
+    .category-card {
+      padding: 28px;
+
+      min-height: 235px;
+
+      border-radius: var(--radius);
+
+      background: var(--card);
+
+      border: 1px solid var(--line);
+
+      transition: .25s ease;
+
+      position: relative;
+      overflow: hidden;
+    }
+
+    .category-card::after {
+      content: "";
+
+      position: absolute;
+
+      width: 130px;
+      height: 130px;
+
+      right: -50px;
+      top: -50px;
+
+      border-radius: 50%;
+
+      background:
+        radial-gradient(circle,rgba(79,140,255,.18),transparent 70%);
+    }
+
+    .category-card:hover {
+      transform: translateY(-7px);
+
+      background: var(--card-strong);
+
+      border-color: rgba(79,140,255,.28);
+    }
+
+    .category-icon {
+      width: 48px;
+      height: 48px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 14px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(79,140,255,.22),
+          rgba(76,224,210,.12)
+        );
+
+      font-size: 1.5rem;
+
+      margin-bottom: 25px;
+    }
+
+    .category-card h3 {
+      font-size: 1.12rem;
+      margin-bottom: 8px;
+    }
+
+    .category-card p {
+      color: var(--muted);
+
+      font-size: .88rem;
+
+      max-width: 300px;
+    }
+
+    .category-link {
+      display: inline-block;
+
+      margin-top: 20px;
+
+      color: var(--blue-2);
+
+      font-size: .82rem;
+      font-weight: 800;
+    }
+
+    /* =========================
+       HOW IT WORKS
+    ========================= */
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 20px;
+    }
+
+    .step {
+      padding: 30px;
+
+      border-radius: var(--radius);
+
+      background: rgba(255,255,255,.04);
+
+      border: 1px solid var(--line);
+    }
+
+    .step-number {
+      font-family: "Manrope",sans-serif;
+
+      font-size: 2.3rem;
+      font-weight: 800;
+
+      color: var(--blue-2);
+
+      margin-bottom: 24px;
+    }
+
+    .step h3 {
+      margin-bottom: 8px;
+    }
+
+    .step p {
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    /* =========================
+       USE CASES
+    ========================= */
+
+    .usecases {
+      background:
+        linear-gradient(
+          135deg,
+          rgba(79,140,255,.05),
+          rgba(76,224,210,.025)
+        );
+    }
+
+    .usecase-grid {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 18px;
+    }
+
+    .usecase {
+      padding: 30px;
+
+      border-radius: var(--radius);
+
+      background: rgba(255,255,255,.05);
+
+      border: 1px solid var(--line);
+    }
+
+    .usecase strong {
+      display: block;
+
+      margin-bottom: 10px;
+
+      font-size: 1.05rem;
+    }
+
+    .usecase p {
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .cta-box {
+      padding: 65px 35px;
+
+      border-radius: 34px;
+
+      text-align: center;
+
+      background:
+        radial-gradient(circle at 20% 20%,rgba(76,224,210,.15),transparent 30%),
+        linear-gradient(135deg,#11213a,#0b1626);
+
+      border: 1px solid rgba(255,255,255,.10);
+
+      box-shadow: var(--shadow);
+    }
+
+    .cta-box h2 {
+      font-family: "Manrope",sans-serif;
+
+      font-size: clamp(2.8rem,6vw,5rem);
+      line-height: 1;
+
+      letter-spacing: -2px;
+    }
+
+    .cta-box p {
+      margin: 18px auto 27px;
+
+      max-width: 650px;
+
+      color: #afbac8;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      padding: 45px 0;
+
+      border-top: 1px solid var(--line);
+
+      color: #7f8b9b;
+
+      font-size: .82rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 18px;
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media(max-width:1000px) {
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .category-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .steps {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+    @media(max-width:760px) {
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+
+        position: absolute;
+
+        top: 78px;
+        left: 0;
+        right: 0;
+
+        padding: 25px;
+
+        background: rgba(7,17,31,.98);
+
+        flex-direction: column;
+        align-items: stretch;
+
+        border-bottom: 1px solid var(--line);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .hero h1 {
+        font-size: clamp(3.4rem,16vw,5.2rem);
+      }
+
+      .category-grid,
+      .usecase-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 80px 0;
+      }
+
+      .hero-stats {
+        gap: 22px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+
+  <div class="container nav">
+
+    <a href="#start" class="logo">
+
+      <div class="logo-box">
+        A
+      </div>
+
+      Auftrag<span>Direkt</span>
+
+    </a>
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+    >
+      ☰
+    </button>
+
+    <ul
+      class="nav-links"
+      id="navLinks"
+    >
+
+      <li>
+        <a href="#start">
+          Start
+        </a>
+      </li>
+
+      <li>
+        <a href="#leistungen">
+          Leistungen
+        </a>
+      </li>
+
+      <li>
+        <a href="#ablauf">
+          So funktioniert's
+        </a>
+      </li>
+
+      <li>
+        <a href="#kontakt">
+          Für Anbieter
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="#anfrage"
+          class="nav-button"
+        >
+          Auftrag anfragen
+        </a>
+      </li>
+
+    </ul>
+
+  </div>
+
+</header>
+
+
+<main>
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section
+  class="hero"
+  id="start"
+>
+
+  <div class="container hero-grid">
+
+    <div>
+
+      <div class="hero-badge">
+        ✓ Kostenlos & unverbindlich
+      </div>
+
+      <h1>
+        DER PASSENDE
+        <span>ANBIETER</span>
+        FÜR DEINEN AUFTRAG.
+      </h1>
+
+      <p>
+        Du beschreibst kurz, was du brauchst.
+        Wir vermitteln deine Anfrage an passende Partner
+        aus der jeweiligen Branche.
+        Einfach, schnell und ohne lange Suche.
+      </p>
+
+      <div class="hero-actions">
+
+        <a
+          href="#anfrage"
+          class="btn btn-primary"
+        >
+          Auftrag anfragen →
+        </a>
+
+        <a
+          href="#leistungen"
+          class="btn btn-secondary"
+        >
+          Leistungen ansehen
+        </a>
+
+      </div>
+
+      <div class="hero-stats">
+
+        <div class="stat">
+          <strong>14+</strong>
+          <span>Vermittlungsbereiche</span>
+        </div>
+
+        <div class="stat">
+          <strong>1 Anfrage</strong>
+          <span>passende Partner</span>
+        </div>
+
+        <div class="stat">
+          <strong>0 €</strong>
+          <span>Anfragekosten</span>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- QUICK SEARCH -->
+
+    <div
+      class="hero-panel"
+      id="anfrage"
+    >
+
+      <div class="panel-title">
+        Was möchtest du anfragen?
+      </div>
+
+      <form class="quick-search">
+
+        <div>
+
+          <label>
+            Leistung
+          </label>
+
+          <select>
+
+            <option>
+              Bitte auswählen
+            </option>
+
+            <option>
+              🚌 Buscharter mit Fahrer
+            </option>
+
+            <option>
+              🚐 Kleinbus / Minibus mit Fahrer
+            </option>
+
+            <option>
+              🚘 Chauffeur- / Limousinenservice
+            </option>
+
+            <option>
+              🚚 Umzug
+            </option>
+
+            <option>
+              🗑️ Entrümpelung
+            </option>
+
+            <option>
+              🚛 Möbel- / Sondertransport
+            </option>
+
+            <option>
+              🎉 Event-Catering
+            </option>
+
+            <option>
+              🍹 Mobile Cocktailbar
+            </option>
+
+            <option>
+              🎧 DJ / Eventtechnik
+            </option>
+
+            <option>
+              📸 Fotograf / Videograf
+            </option>
+
+            <option>
+              🚻 Toilettenwagen
+            </option>
+
+            <option>
+              🏗️ Containervermietung
+            </option>
+
+            <option>
+              🌳 Baumfällung / Gartenarbeiten
+            </option>
+
+            <option>
+              ☀️ Photovoltaik
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <div>
+
+          <label>
+            Ort / PLZ
+          </label>
+
+          <input
+            type="text"
+            placeholder="z. B. 13585 Berlin"
+          >
+
+        </div>
+
+
+        <div>
+
+          <label>
+            Gewünschter Termin
+          </label>
+
+          <input
+            type="date"
+          >
+
+        </div>
+
+
+        <button
+          type="button"
+          class="btn btn-primary"
+        >
+          Anfrage starten →
+        </button>
+
+      </form>
+
+      <div class="panel-note">
+        Kostenlos · unverbindlich · keine Buchungspflicht
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     TRUST
+========================= -->
+
+<div class="trustbar">
+
+  <div class="container trust-inner">
+
+    <div>
+      ✓ Keine versteckten Kosten
+    </div>
+
+    <div>
+      ✓ Regionale Partner
+    </div>
+
+    <div>
+      ✓ Direkte Anfrage
+    </div>
+
+    <div>
+      ✓ Für Privat & Gewerbe
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- =========================
+     KATEGORIEN
+========================= -->
+
+<section
+  class="categories"
+  id="leistungen"
+>
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        Unsere Vermittlungen
+      </div>
+
+      <h2>
+        WAS DÜRFEN WIR
+        FÜR DICH FINDEN?
+      </h2>
+
+      <p>
+        Von Busfahrten über Umzüge bis zu Eventdienstleistungen:
+        Wähle deinen Bereich und sende uns eine unverbindliche Anfrage.
+      </p>
+
+    </div>
+
+
+    <div class="category-grid">
+
+
+      <div class="category-card">
+
+        <div class="category-icon">
+          🚌
+        </div>
+
+        <h3>
+          Buscharter mit Fahrer
+        </h3>
+
+        <p>
+          Reisebusse für Gruppen, Vereine, Unternehmen,
+          Ausflüge und Veranstaltungen.
+        </p>
+
+        <a
+          href="#anfrage"
+          class="category-link"
+        >
+          Bus anfragen →
+        </a>
+
+      </div>
+
+
+      <div class="category-card">
+
+        <div class="category-icon">
+          🚐
+        </div>
+
+        <h3>
+          Kleinbus & Minibus
+        </h3>
+
+        <p>
+          Flexible Personenbeförderung für kleinere Gruppen,
+          Transfers und Shuttlefahrten.
+        </p>
+
+        <a
+          href="#anfrage"
+          class="category-link"
+        >
+          Anfrage starten →
+        </a>
+
+      </div>
+
+
+      <div class="category-card">
+
+        <div class="category-icon">
+          🚘
+        </div>
+
+        <h3>
+          Chauffeur & Limousine
+        </h3>
+
+        <p>
+          Fahrservice für Business, Hochzeiten,
+          besondere Anlässe und Transfers.
+        </p>
+
+        <a
+          href="#anfrage"
+          class="category-link"
+        >
+          Anfrage starten →
+        </a>
+
+      </div>
+
+
+      <div class="category-card">
+
+        <div class="category-icon">
+          🚚
+        </div>
+
+        <h3>
+          Umzüge
+        </h3>
+
+        <p>
+          Passende Umzugsunternehmen für private
+          und gewerbliche Umzüge.
+        </p>
+
+        <a
+          href="#anfrage"
+          class="category-link"
+        >
+          Umzug anfragen →
+        </a>
+
+      </div>
+
+
+      <div class="category-card">
+
+        <div class="category-icon">
+          🗑️
+        </div>
+
+        <h3>
+          Entrümpelung
+        </h3>
+
+        <p>
+          Wohnung, Haus, Keller, Garage
+          oder komplette Haushaltsauflösung.
+        </p>
+
+        <a
+          href="#anfrage"
+          class="category-link"
+        >
+          Entrümpelung anfragen →
+        </a>
+
+      </div>
+
+
+      <div class="category-card">
+
+        <div class="category-icon">
+          🚛
+        </div>
+
+        <h3>
+          Möbel- & Sondertransport
+        </h3>
+
+        <p>
+          Transporte für Möbel, größere Gegenstände
+          und besondere Transportaufgaben.
+        </p>
+
+        <a
+          href="#anfrage"
+          class="category-link"
+        >
+          Transport anfragen →
+        </a>
+
+      </div>
+
+
+      <div class="category-card">
+
+        <div class="category-icon">
+          🎉
+        </div>
+
+        <h3>
+          Event-Catering
+        </h3>
+
+        <p>
+          Catering für Hochzeiten,
+          Firmenfeiern, Geburtstage und Events.
+        </p>
+
+        <a
+          href="#anfrage"
+          class="category-link"
+        >
+          Catering anfragen →
+        </a>
+
+      </div>
+
+
+      <div class="category-card">
+
+        <div class="category-icon">
+          🍹
+        </div>
+
+        <h3>
+          Mobile Cocktailbar
+        </h3>
+
+        <p>
+          Mobile Bars und Cocktailservices
+          für private und gewerbliche Veranstaltungen.
+        </p>
+
+        <a
+          href="#anfrage"
+          class="category-link"
+        >
+          Cocktailbar anfragen →
+        </a>
+
+      </div>
+
+
+      <div class="category-card">
+
+        <div class="category-icon">
+          🎧
+        </div>
+
+        <h3>
+          DJ & Eventtechnik
+        </h3>
+
+        <p>
+          DJs, Ton, Licht und Technik
+          für Partys und Veranstaltungen.
+        </p>
+
+        <a
+          href="#anfrage"
+          class="category-link"
+        >
+          DJ anfragen →
+        </a>
+
+      </div>
+
+
+      <div class="category-card">
+
+        <div class="category-icon">
+          📸
+        </div>
+
+        <h3>
+          Fotograf & Videograf
+        </h3>
+
+        <p>
+          Foto- und Videobegleitung
+          für Hochzeiten, Firmen und Events.
+        </p>
+
+        <a
+          href="#anfrage"
+          class="category-link"
+        >
+          Fotograf anfragen →
+        </a>
+
+      </div>
+
+
+      <div class="category-card">
+
+        <div class="category-icon">
+          🚻
+        </div>
+
+        <h3>
+          Toilettenwagen
+        </h3>
+
+        <p>
+          Mobile Sanitärlösungen
+          für Veranstaltungen, Feste und Baustellen.
+        </p>
+
+        <a
+          href="#anfrage"
+          class="category-link"
+        >
+          Toilettenwagen anfragen →
+        </a>
+
+      </div>
+
+
+      <div class="category-card">
+
+        <div class="category-icon">
+          🏗️
+        </div>
+
+        <h3>
+          Containervermietung
+        </h3>
+
+        <p>
+          Container für Entsorgung,
+          Baustellen und größere Projekte.
+        </p>
+
+        <a
+          href="#anfrage"
+          class="category-link"
+        >
+          Container anfragen →
+        </a>
+
+      </div>
+
+
+      <div class="category-card">
+
+        <div class="category-icon">
+          🌳
+        </div>
+
+        <h3>
+          Baum & Garten
+        </h3>
+
+        <p>
+          Baumfällung, Grundstückspflege,
+          Gartenarbeiten und Rückschnitt.
+        </p>
+
+        <a
+          href="#anfrage"
+          class="category-link"
+        >
+          Gartenservice anfragen →
+        </a>
+
+      </div>
+
+
+      <div class="category-card">
+
+        <div class="category-icon">
+          ☀️
+        </div>
+
+        <h3>
+          Photovoltaik
+        </h3>
+
+        <p>
+          Vermittlung von Fachbetrieben
+          für Photovoltaikanlagen und Beratung.
+        </p>
+
+        <a
+          href="#anfrage"
+          class="category-link"
+        >
+          PV-Angebot anfragen →
+        </a>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     ABLAUF
+========================= -->
+
+<section id="ablauf">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        Einfach vermittelt
+      </div>
+
+      <h2>
+        IN DREI SCHRITTEN
+        ZUM PASSENDEN ANBIETER.
+      </h2>
+
+    </div>
+
+
+    <div class="steps">
+
+
+      <div class="step">
+
+        <div class="step-number">
+          01
+        </div>
+
+        <h3>
+          Auftrag beschreiben
+        </h3>
+
+        <p>
+          Wähle die passende Leistung und
+          gib die wichtigsten Informationen zu deinem Auftrag an.
+        </p>
+
+      </div>
+
+
+      <div class="step">
+
+        <div class="step-number">
+          02
+        </div>
+
+        <h3>
+          Passende Partner
+        </h3>
+
+        <p>
+          Deine Anfrage wird an geeignete
+          Anbieter aus dem jeweiligen Bereich vermittelt.
+        </p>
+
+      </div>
+
+
+      <div class="step">
+
+        <div class="step-number">
+          03
+        </div>
+
+        <h3>
+          Angebot erhalten
+        </h3>
+
+        <p>
+          Der Anbieter meldet sich mit Verfügbarkeit,
+          Preis und weiteren Informationen bei dir.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     CROSS SELL
+========================= -->
+
+<section class="usecases">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        Mehr aus einer Anfrage
+      </div>
+
+      <h2>
+        ALLES RUND UM
+        DEIN PROJEKT.
+      </h2>
+
+      <p>
+        Viele Aufträge benötigen mehrere Dienstleistungen.
+        AuftragDirekt hilft dir, passende Anbieter
+        für dein gesamtes Vorhaben zu finden.
+      </p>
+
+    </div>
+
+
+    <div class="usecase-grid">
+
+
+      <div class="usecase">
+
+        <strong>
+          🎉 Du planst eine Veranstaltung?
+        </strong>
+
+        <p>
+          Buscharter, Catering, Cocktailbar,
+          DJ, Fotograf und Toilettenwagen
+          können gemeinsam angefragt werden.
+        </p>
+
+      </div>
+
+
+      <div class="usecase">
+
+        <strong>
+          🏠 Du ziehst um?
+        </strong>
+
+        <p>
+          Umzug, Entrümpelung, Möbeltransport
+          und Container lassen sich miteinander kombinieren.
+        </p>
+
+      </div>
+
+
+      <div class="usecase">
+
+        <strong>
+          🏢 Du planst ein Firmenevent?
+        </strong>
+
+        <p>
+          Shuttle, Bus, Catering,
+          Eventtechnik und Fotografie aus einer Hand vermittelt.
+        </p>
+
+      </div>
+
+
+      <div class="usecase">
+
+        <strong>
+          🌳 Arbeiten am Grundstück?
+        </strong>
+
+        <p>
+          Gartenarbeiten, Baumfällung,
+          Container und weitere passende Services.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section>
+
+  <div class="container">
+
+    <div class="cta-box">
+
+      <h2>
+        AUFTRAG BESCHREIBEN.
+        PASSENDEN PARTNER FINDEN.
+      </h2>
+
+      <p>
+        Sag uns, was du brauchst.
+        Die Anfrage ist für dich kostenlos und unverbindlich.
+      </p>
+
+      <a
+        href="#anfrage"
+        class="btn btn-primary"
+      >
+        Jetzt Auftrag anfragen →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+<footer id="kontakt">
+
+  <div class="container footer-inner">
+
+    <div>
+      © 2026 AuftragDirekt
+    </div>
+
+    <div>
+      Vermittlungsplattform für Dienstleistungen
+    </div>
+
+    <div class="footer-links">
+
+      <a href="#">
+        Impressum
+      </a>
+
+      <a href="#">
+        Datenschutz
+      </a>
+
+      <a href="#">
+        Für Anbieter
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+
+const menuToggle =
+document.getElementById("menuToggle");
+
+const navLinks =
+document.getElementById("navLinks");
+
+
+menuToggle.addEventListener("click", () => {
+
+  navLinks.classList.toggle("active");
+
+  menuToggle.textContent =
+  navLinks.classList.contains("active")
+  ? "✕"
+  : "☰";
+
+});
+
+
+document
+.querySelectorAll(".nav-links a")
+.forEach(link => {
+
+  link.addEventListener("click", () => {
+
+    navLinks.classList.remove("active");
+
+    menuToggle.textContent = "☰";
+
+  });
+
+});
+
+</script>
+
+
+</body>
+</html>
